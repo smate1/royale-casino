@@ -517,6 +517,8 @@ input[type="number"]:focus {
   background: linear-gradient(to bottom, var(--color-dark), var(--color-dark-secondary));
   border-radius: var(--radius);
   transition: all 0.3s ease;
+  color: #ffffff;
+  padding: 10px;
 }
 
 #chat-input:focus, .control-input:focus {
