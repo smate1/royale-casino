@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>X50 - Casino Royale</title>
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/games.css" />
+  <link rel="stylesheet" href="/styles/burger-menu.css" />
+  <link rel="stylesheet" href="/styles/decorations.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="description" content="X50 в Casino Royale - умножайте ставки до x50 раз!" />
+  <script src="/assets/burger-menu.js" defer></script>
+  <script src="/assets/range-inputs.js" defer></script>
+  <script src="/assets/particles.js" defer></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="menu-overlay"></div>
+    <header class="header">
+      <div class="container header-container">
+        <div class="header__top">
+          <a href="/" class="logo">
+            <span class="logo-text">Casino Royale</span>
+          </a>
+          <div class="burger-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="/" class="nav-link">Главная</a></li>
+            <li><a href="/games/jackpot" class="nav-link">Джекпот</a></li>
+            <li><a href="/games/x50" class="nav-link active">X50</a></li>
+            <li><a href="/games/dice" class="nav-link">Dice</a></li>
+            <li><a href="/games/mines" class="nav-link">Мины</a></li>
+            <li><a href="/bonus" class="nav-link">Бонусы</a></li>
+            <li><a href="/referral" class="nav-link">Рефералы</a></li>
+          </ul>
+        </nav>
+        <div class="auth-container">
+          <button id="login-vk" class="auth-btn vk">Войти через VK</button>
+          <button id="login-tg" class="auth-btn tg">Войти через TG</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="container game-container">
+        <div class="game-title-container">
+          <h1 class="game-title">X50</h1>
+          <p class="game-description">Поставьте на число и получите выигрыш до x50 от вашей ставки, если повезет!</p>
+        </div>
+
+        <div class="game-panel">
+          <div class="game-field">
+            <div class="corner-decoration top-left"></div>
+            <div class="corner-decoration top-right"></div>
+            <div class="corner-decoration bottom-left"></div>
+            <div class="corner-decoration bottom-right"></div>
+            <div class="x50-multiplier" id="current-multiplier">x0.00</div>
+            <div class="x50-status" id="game-status">Ожидание начала игры...</div>
+
+            <div class="x50-bets">
+              <h3 class="section-title">Ставки</h3>
+              <div class="bets-list" id="bets-list">
+                <!-- Ставки будут добавлены динамически -->
+              </div>
+            </div>
+
+            <h3 class="section-title" style="margin-top: 20px;">История игр</h3>
+            <table class="history-table">
+              <thead>
+                <tr>
+                  <th>Время</th>
+                  <th>Множитель</th>
+                  <th>Сумма ставок</th>
+                  <th>Победители</th>
+                </tr>
+              </thead>
+              <tbody id="history-tbody">
+                <!-- История игр будет добавлена динамически -->
+              </tbody>
+            </table>
+          </div>
+
+          <div class="game-controls">
+            <div class="corner-decoration top-left"></div>
+            <div class="corner-decoration top-right"></div>
+            <div class="corner-decoration bottom-left"></div>
+            <div class="corner-decoration bottom-right"></div>
+            <div class="control-group">
+              <label for="bet-amount" class="control-label">Сумма ставки:</label>
+              <input type="number" id="bet-amount" class="control-input" min="1" value="100">
+              <input type="range" id="bet-slider" class="control-slider" min="1" max="1000" value="100">
+            </div>
+
+            <div class="control-group">
+              <label for="cashout-at" class="control-label">Забрать при:</label>
+              <input type="number" id="cashout-at" class="control-input" min="1.1" max="50" step="0.1" value="2.0">
+            </div>
+
+            <div class="control-group">
+              <button id="place-bet-btn" class="action-btn">Сделать ставку</button>
+              <button id="cashout-btn" class="action-btn" style="background-color: #00cc00; display: none;">Забрать сейчас</button>
+            </div>
+
+            <div class="control-group">
+              <div id="bet-info">
+                <p>Возможный выигрыш: <span id="potential-win">₽0</span></p>
+                <p>Статус: <span id="bet-status">Нет активных ставок</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-text">Casino Royale</span>
+            <p class="copyright">© 2022-2025 Casino Royale</p>
+          </div>
+          <div class="footer-links">
+            <ul class="footer-nav">
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/support">Поддержка</a></li>
+              <li><a href="/terms">Условия использования</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-link vk">VK</a>
+            <a href="#" class="social-link tg">TG</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div class="modal" id="auth-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Авторизация</h2>
+        <div class="auth-methods">
+          <button class="auth-method vk">Войти через VK</button>
+          <button class="auth-method tg">Войти через TG</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/games/x50.ts"></script>
+</body>
+
+</html>

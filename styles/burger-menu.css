@@ -1,0 +1,127 @@
+/* Стилі для бургер-меню */
+.burger-menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 200;
+  position: relative;
+}
+
+.burger-menu-btn span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-orange);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Блокуємо прокрутку коли меню відкрите */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Анімація кнопки бургер при відкритому меню */
+.burger-menu-btn.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger-menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu-btn.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Компактніші стилі для хедера */
+.header {
+  padding: 10px 0; /* зменшено з 15px до 10px */
+}
+
+.logo-text {
+  font-size: 20px; /* зменшено з 24px до 20px */
+}
+
+.nav-link {
+  padding: 8px 12px; /* зменшено з 10px 15px до 8px 12px */
+  font-size: 14px; /* додано менший розмір шрифту */
+}
+
+.auth-btn {
+  font-size: 13px; /* зменшено з 14px до 13px */
+  padding: 6px 12px; /* зменшено з 8px 15px до 6px 12px */
+}
+
+/* Стилі для мобільної версії */
+@media (max-width: 575px) {
+  .burger-menu-btn {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100vh;
+    background-color: var(--color-dark);
+    z-index: 100;
+    transition: right 0.3s ease;
+    margin-left: 0;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    padding-top: 50px; /* зменшено з 60px до 50px */
+  }
+
+  .main-nav.active {
+    right: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0; /* зменшено з 10px до 5px */
+  }
+
+  .nav-link {
+    display: block;
+    padding: 12px; /* зменшено з 15px до 12px */
+    width: 100%;
+  }
+
+  .auth-container {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px; /* зменшено з 15px до 10px */
+  }
+
+  /* Додаємо темний фон при відкритому меню */
+  .menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 90;
+  }
+
+  .menu-overlay.active {
+    display: block;
+  }
+}
