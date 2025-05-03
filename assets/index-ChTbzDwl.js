@@ -110,7 +110,7 @@ class d {
 			(this.currentUser = {
 				id: 'vk' + Math.floor(Math.random() * 1e6),
 				username: 'VK_User' + Math.floor(Math.random() * 100),
-				avatar: '/images/profile.svg',
+				avatar: './images/profile.svg',
 				balance: 1e3,
 				rank: 'BRONZE',
 				totalDeposits: 5e3,
@@ -125,7 +125,7 @@ class d {
 			(this.currentUser = {
 				id: 'tg' + Math.floor(Math.random() * 1e6),
 				username: 'TG_User' + Math.floor(Math.random() * 100),
-				avatar: '/images/profile.svg',
+				avatar: './images/profile.svg',
 				balance: 2e3,
 				rank: 'SILVER',
 				totalDeposits: 12e3,
