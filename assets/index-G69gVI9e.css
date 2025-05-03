@@ -38,7 +38,7 @@ body {
 }
 
 * {
-  -webkit-tap-highlight-color: transparent; /* мобільні браузери */
+  -webkit-tap-highlight-color: transparent; 
 }
 
 .header__top{
@@ -231,6 +231,7 @@ button,
 	background-color: var(--color-dark-secondary);
 	color: var(--color-text);
 	font-family: var(--font-primary);
+	color: #fff;
 }
 #chat-send-btn {
 	background-color: var(--color-orange);
