@@ -59,14 +59,16 @@ body.menu-open {
   font-size: 13px; /* зменшено з 14px до 13px */
   padding: 6px 12px; /* зменшено з 8px 15px до 6px 12px */
 }
-
-/* Стилі для мобільної версії */
-@media (max-width: 575px) {
+@media (max-width: 991px){
   .burger-menu-btn {
     display: inline-flex;
     margin-left: auto;
     margin-right: 10px;
   }
+}
+/* Стилі для мобільної версії */
+@media (max-width: 575px) {
+
 
   .header-container {
     flex-wrap: wrap;
