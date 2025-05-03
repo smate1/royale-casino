@@ -37,6 +37,10 @@ body {
 	min-height: 100vh;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent; /* мобільні браузери */
+}
+
 .header__top{
   display: flex;
   align-items: center;
