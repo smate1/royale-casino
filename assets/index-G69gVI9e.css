@@ -127,9 +127,14 @@ button,
 	color: var(--color-orange);
 	background-color: #ff6b001a;
 }
+.user-info{
+	display: flex;
+	justify-content: space-between;
+}
 .auth-container {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	gap: 10px;
 }
 .auth-btn {
@@ -390,6 +395,7 @@ button,
 	border: none;
 	font-weight: 500;
 }
+
 .auth-method.vk {
 	background-color: #4c75a3;
 	color: #fff;
@@ -814,7 +820,7 @@ button,
 		justify-content: center;
 	}
 	.auth-container {
-		justify-content: center;
+		/* justify-content: center; */
 	}
 }
 @media (max-width: 768px) {
@@ -851,7 +857,5 @@ button,
 		flex-direction: column;
 		width: 100%;
 	}
-	.auth-btn {
-		width: 100%;
-	}
+
 }
