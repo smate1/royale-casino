@@ -155,6 +155,8 @@ button,
 .user-info {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	gap: 7px;
 	width: 100%;
 }
 .auth-container {
@@ -864,6 +866,10 @@ button,
 		gap: 10px;
 		align-items: center;
 	}
+}
+.user-avatar{
+  max-width: 50px;
+  max-height: 50px;
 }
 @media (max-width: 576px) {
 	.games-showcase {
