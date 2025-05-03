@@ -60,7 +60,25 @@
   margin-bottom: 8px;
   color: var(--color-text);
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
+.page-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Займає весь вільний простір */
+}
+
+footer {
+  background: #ccc;
+  padding: 1rem;
+}
 .control-input {
   width: 100%;
   padding: 10px;
@@ -69,7 +87,6 @@
   background-color: var(--color-dark-secondary);
   color: var(--color-text);
   font-family: var(--font-primary);
-  margin-bottom: 10px;
 }
 
 .control-slider {
@@ -110,7 +127,6 @@
   border-radius: var(--radius);
   cursor: pointer;
   transition: var(--transition);
-  margin-top: 10px;
 }
 
 .action-btn:hover {

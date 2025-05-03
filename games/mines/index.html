@@ -7,140 +7,138 @@
   <title>Мины - Casino Royale</title>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <meta name="description" content="Мины в Casino Royale - найдите алмазы и избегайте мин!" />
-  
+
   <link rel="stylesheet" href="/styles/decorations.css" />
   <link rel="stylesheet" href="/styles/burger-menu.css" />
   <link rel="stylesheet" href="/styles/games.css" />
   <link rel="stylesheet" href="/styles/main.css" />
+    <script src="/assets/burger-menu.js" defer></script>
+    <script src="/assets/range-inputs.js" defer></script>
+    <script src="/assets/particles.js" defer></script>
 </head>
 
 <body>
   <div id="app">
     <div class="menu-overlay"></div>
-    <header class="header">
-      <div class="container header-container">
-        <div class="header__top">
-          <a href="./index.html" class="logo">
-            <span class="logo-text">Casino Royale</span>
-          </a>
-          <div class="burger-menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="container header-container">
+          <div class="header__top">
+            <a href="./index.html" class="logo">
+              <span class="logo-text">Casino Royale</span>
+            </a>
+            <div class="burger-menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li><a href="/index.html" class="nav-link">Главная</a></li>
+              <li><a href="/games/jackpot/index.html" class="nav-link">Джекпот</a></li>
+              <li><a href="/games/x50/index.html" class="nav-link">X50</a></li>
+              <li><a href="/games/dice/index.html" class="nav-link">Dice</a></li>
+              <li><a href="/games/mines/index.html" class="nav-link active">Мины</a></li>
+              <li><a href="/bonus/index.html" class="nav-link">Бонусы</a></li>
+              <li><a href="/referral/index.html" class="nav-link">Рефералы</a></li>
+            </ul>
+          </nav>
+          <div class="auth-container">
+            <button id="login-vk" class="auth-btn vk">Войти через VK</button>
+            <button id="login-tg" class="auth-btn tg">Войти через TG</button>
           </div>
         </div>
-        <nav class="main-nav">
-          <ul class="nav-list">
-            <li><a href="./index.html" class="nav-link">Главная</a></li>
-            <li><a href="./games/jackpot" class="nav-link">Джекпот</a></li>
-            <li><a href="./games/x50" class="nav-link">X50</a></li>
-            <li><a href="./games/dice" class="nav-link">Dice</a></li>
-            <li><a href="./games/mines" class="nav-link active">Мины</a></li>
-            <li><a href="./bonus/index.html" class="nav-link">Бонусы</a></li>
-            <li><a href="./referral/index.html" class="nav-link">Рефералы</a></li>
-          </ul>
-        </nav>
-        <div class="auth-container">
-          <button id="login-vk" class="auth-btn vk">Войти через VK</button>
-          <button id="login-tg" class="auth-btn tg">Войти через TG</button>
-        </div>
-      </div>
-    </header>
-
-    <main class="main-content">
-      <div class="container game-container">
-        <div class="game-title-container">
-          <h1 class="game-title">Мины</h1>
-          <p class="game-description">Открывайте ячейки, ищите сокровища и избегайте мин! Забирайте выигрыш в любой момент или рискуйте для увеличения коэффициента.</p>
-        </div>
-
-        <div class="game-panel">
-          <div class="game-field">
-            <div class="corner-decoration top-left"></div>
-            <div class="corner-decoration top-right"></div>
-            <div class="corner-decoration bottom-left"></div>
-            <div class="corner-decoration bottom-right"></div>
-            <div class="mines-grid" id="mines-grid">
-              <!-- Сетка будет заполнена динамически -->
-            </div>
-
-            <h3 class="section-title" style="margin-top: 20px;">История игр</h3>
-            <table class="history-table">
-              <thead>
-                <tr>
-                  <th>Время</th>
-                  <th>Ставка</th>
-                  <th>Открыто ячеек</th>
-                  <th>Выигрыш</th>
-                </tr>
-              </thead>
-              <tbody id="history-tbody">
-                <!-- История игр будет добавлена динамически -->
-              </tbody>
-            </table>
+      </header>
+      <main class="main-content">
+        <div class="container game-container">
+          <div class="game-title-container">
+            <h1 class="game-title">Мины</h1>
+            <p class="game-description">Открывайте ячейки, ищите сокровища и избегайте мин! Забирайте выигрыш в любой
+              момент или рискуйте для увеличения коэффициента.</p>
           </div>
-
-          <div class="game-controls">
-            <div class="corner-decoration top-left"></div>
-            <div class="corner-decoration top-right"></div>
-            <div class="corner-decoration bottom-left"></div>
-            <div class="corner-decoration bottom-right"></div>
-            <div class="control-group">
-              <label for="bet-amount" class="control-label">Сумма ставки:</label>
-              <input type="number" id="bet-amount" class="control-input" min="1" value="100">
-              <input type="range" id="bet-slider" class="control-slider" min="1" max="1000" value="100">
+          <div class="game-panel">
+            <div class="game-field">
+              <div class="corner-decoration top-left"></div>
+              <div class="corner-decoration top-right"></div>
+              <div class="corner-decoration bottom-left"></div>
+              <div class="corner-decoration bottom-right"></div>
+              <div class="mines-grid" id="mines-grid">
+                <!-- Сетка будет заполнена динамически -->
+              </div>
+              <h3 class="section-title" style="margin-top: 20px;">История игр</h3>
+              <table class="history-table">
+                <thead>
+                  <tr>
+                    <th>Время</th>
+                    <th>Ставка</th>
+                    <th>Открыто ячеек</th>
+                    <th>Выигрыш</th>
+                  </tr>
+                </thead>
+                <tbody id="history-tbody">
+                  <!-- История игр будет добавлена динамически -->
+                </tbody>
+              </table>
             </div>
-
-            <div class="control-group mines-settings">
-              <div class="mines-count">
-                <label class="mines-count-label">Количество мин:</label>
-                <div class="mines-count-buttons">
-                  <button class="bet-type-btn" data-mines="3">3</button>
-                  <button class="bet-type-btn active" data-mines="5">5</button>
-                  <button class="bet-type-btn" data-mines="10">10</button>
-                  <button class="bet-type-btn" data-mines="24">24</button>
+            <div class="game-controls">
+              <div class="corner-decoration top-left"></div>
+              <div class="corner-decoration top-right"></div>
+              <div class="corner-decoration bottom-left"></div>
+              <div class="corner-decoration bottom-right"></div>
+              <div class="control-group">
+                <label for="bet-amount" class="control-label">Сумма ставки:</label>
+                <input type="number" id="bet-amount" class="control-input" min="1" value="100">
+                <input type="range" id="bet-slider" class="control-slider" min="1" max="1000" value="100">
+              </div>
+              <div class="control-group mines-settings">
+                <div class="mines-count">
+                  <label class="mines-count-label">Количество мин:</label>
+                  <div class="mines-count-buttons">
+                    <button class="bet-type-btn" data-mines="3">3</button>
+                    <button class="bet-type-btn active" data-mines="5">5</button>
+                    <button class="bet-type-btn" data-mines="10">10</button>
+                    <button class="bet-type-btn" data-mines="24">24</button>
+                  </div>
+                </div>
+                <p>Мин в игре: <span id="mines-count-value">5</span></p>
+              </div>
+              <div class="control-group">
+                <div id="bet-info">
+                  <p>Следующий коэффициент: <span id="next-multiplier">x1.20</span></p>
+                  <p>Текущий выигрыш: <span id="current-win">₽0.00</span></p>
                 </div>
               </div>
-              <p>Мин в игре: <span id="mines-count-value">5</span></p>
-            </div>
-
-            <div class="control-group">
-              <div id="bet-info">
-                <p>Следующий коэффициент: <span id="next-multiplier">x1.20</span></p>
-                <p>Текущий выигрыш: <span id="current-win">₽0.00</span></p>
+              <div class="control-group">
+                <button id="start-game-btn" class="action-btn">Начать игру</button>
+                <button id="cashout-btn" class="mines-cashout" disabled>Забрать выигрыш</button>
               </div>
             </div>
-
-            <div class="control-group">
-              <button id="start-game-btn" class="action-btn">Начать игру</button>
-              <button id="cashout-btn" class="mines-cashout" disabled>Забрать выигрыш</button>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <span class="logo-text">Casino Royale</span>
+              <p class="copyright">© 2022-2025 Casino Royale</p>
+            </div>
+            <div class="footer-links">
+              <ul class="footer-nav">
+                <li><a href="./faq">FAQ</a></li>
+                <li><a href="./support">Поддержка</a></li>
+                <li><a href="./terms">Условия использования</a></li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <a href="#" class="social-link vk">VK</a>
+              <a href="#" class="social-link tg">TG</a>
             </div>
           </div>
         </div>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <span class="logo-text">Casino Royale</span>
-            <p class="copyright">© 2022-2025 Casino Royale</p>
-          </div>
-          <div class="footer-links">
-            <ul class="footer-nav">
-              <li><a href="./faq">FAQ</a></li>
-              <li><a href="./support">Поддержка</a></li>
-              <li><a href="./terms">Условия использования</a></li>
-            </ul>
-          </div>
-          <div class="footer-social">
-            <a href="#" class="social-link vk">VK</a>
-            <a href="#" class="social-link tg">TG</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <!-- Модальные окна -->
     <div class="modal" id="auth-modal">
@@ -155,8 +153,7 @@
     </div>
   </div>
 
-  <script src="./assets/burger-menu.js" defer></script>
-  <script src="./assets/range-inputs.js" defer></script>
-  <script src="./assets/particles.js" defer></script>
+
 </body>
+
 </html>
