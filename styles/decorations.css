@@ -373,8 +373,8 @@ input[type="range"]::-moz-range-thumb:hover {
 .section-title::before {
   content: '';
   position: absolute;
-  top: 50%;
-  left: -15px;
+  top: 38%;
+  left: -22px;
   width: 10px;
   height: 10px;
   transform: translateY(-50%) rotate(45deg);
