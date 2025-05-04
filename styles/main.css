@@ -85,7 +85,7 @@ footer {
 
 /* Кнопки */
 button, .btn {
-  cursor: pointer;
+  cursor: poInter;
   border: none;
   outline: none;
   padding: 10px 20px;
