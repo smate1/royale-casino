@@ -89,7 +89,7 @@ body {
   height: 770px;
   left: -285px;
   top: 100px;
-  z-index: -1;
+  z-index: 0;
   opacity: .5;
 }
 .page-wrapper::before {
@@ -102,7 +102,7 @@ body {
   height: 655px;
   right: -385px;
   bottom: 0;
-  z-index: -1;
+  z-index: 0;
   opacity: .5;
 }
 
