@@ -86,7 +86,10 @@
 html.light-theme .game-field {
   background: linear-gradient(135deg, #fdbc1c 0%, #ff914d 50%, #ff5e3a 100%) !important;
 }
-
+html.light-theme .jackpot-amount,
+html.light-theme .x50-multiplier{
+  color: #000;
+}
 html.light-theme .section-title-light{
   color: #f6ebb9;
   font-weight: 600px;
