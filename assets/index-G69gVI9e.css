@@ -1054,6 +1054,7 @@ button,
 }
 #logout-btn{
   background: var(--color-bronze);
+	color: #000;
 }
 .auth-btn {
   font-size: 12px;
