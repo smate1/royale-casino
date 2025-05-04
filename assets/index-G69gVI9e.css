@@ -257,6 +257,7 @@ button,
 	text-align: center;
 	position: relative;
 	color: #fff;
+	cursor: pointer;
 	overflow: hidden;
 	transition: transform 0.3s ease;
 }
@@ -787,6 +788,7 @@ button,
 	overflow: hidden;
 	color: #fff;
 	text-align: center;
+	cursor: pointer;
 	transition: transform 0.3s ease;
 }
 .promo-banner:hover {
