@@ -1052,9 +1052,21 @@ button,
 		align-items: center;
 	}
 }
+#logout-btn{
+  background: var(--color-bronze);
+}
+.auth-btn {
+  font-size: 12px;
+  padding: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
 .user-avatar {
-	max-width: 50px;
-	max-height: 50px;
+	max-width: 38px;
+	max-height: 38px;
 }
 @media (max-width: 576px) {
 	.promo-title {
