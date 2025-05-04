@@ -38,6 +38,9 @@
   --color-text-secondary: #495057;
   --color-background: #ffffff;
   --color-border: #ced4da;
+
+  /* Змінений колір платини для кращого контрасту */
+  --color-platinum: #7c7c7c;
 }
 
 /* Темна тема (для явного вказання) */
@@ -93,17 +96,19 @@
   background-color: rgba(255, 107, 0, 0.1);
 }
 
+/* Згорнутий чат */
 .chat-collapsed {
   min-height: auto;
   max-height: auto;
 }
 
+/* Змінюємо відображення блоку чату для збільшення/зменшення висоти блоку */
 .chat-container {
   transition: all 0.3s ease;
 }
 
 .chat-collapsed.chat-container {
-  max-height: 62px; 
+  max-height: 60px; /* Висота заголовка з невеликим відступом */
   overflow: hidden;
 }
 
