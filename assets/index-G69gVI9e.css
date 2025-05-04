@@ -217,7 +217,7 @@ button,
 .main-content {
 	padding: 30px 0;
 	position: relative;
-	z-index: 9;
+	z-index: 10;
 }
 
 .main-content-wrapper::before {
@@ -1096,9 +1096,9 @@ button,
 	.main-content-wrapper::before{
 		display: none;
 	}
-	/* .main-content{
+	.main-content{
 		z-index: 0;
-	} */
+	}
 	.header-container {
 		flex-direction: column;
 		align-items: stretch;
