@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./styles/burger-menu.css" />
   <link rel="stylesheet" href="./styles/games.css" />
   <link rel="stylesheet" href="./styles/decorations.css" />
+  <link rel="stylesheet" href="./styles/theme-toggle.css" />
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <link rel="stylesheet" href="./styles/theme-toggle.css" />
   <meta name="description" content="Бонусы Casino Royale - получайте ежедневные бонусы и промокоды!" />
@@ -41,20 +42,6 @@
             </div>
           </div>
           <nav class="main-nav">
-            <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-              </svg>
-            </button>
             <ul class="nav-list">
               <li><a href="./index.html" class="nav-link">Главная</a></li>
               <li><a href="./jackpot.html" class="nav-link">Джекпот</a></li>
@@ -69,6 +56,32 @@
           <div class="auth-container">
             <button id="login-vk" class="auth-btn vk">Войти через VK</button>
             <button id="login-tg" class="auth-btn tg">Войти через TG</button>
+            <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </button>
+            <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </button>
           </div>
         </div>
       </header>
@@ -76,8 +89,7 @@
         <div class="container game-container">
           <div class="game-title-container">
             <h1 class="game-title">Бонусы</h1>
-            <p class="game-description">Получайте дополнительные вознаграждения и увеличивайте свой баланс с нашими
-              бонусами и акциями.</p>
+            <p class="game-description">Получайте дополнительные вознаграждения и увеличивайте свой баланс с нашими бонусами и акциями.</p>
           </div>
           <div class="bonuses-container">
             <!-- Ежедневный бонус -->
@@ -129,8 +141,7 @@
                   </tbody>
                 </table>
                 <button id="claim-daily-bonus" class="action-btn">Получить бонус</button>
-                <div id="bonus-cooldown" class="bonus-cooldown">Следующий бонус доступен через: <span>12:34:56</span>
-                </div>
+                <div id="bonus-cooldown" class="bonus-cooldown">Следующий бонус доступен через: <span>12:34:56</span></div>
               </div>
             </div>
             <!-- Бонус за депозит -->
@@ -142,8 +153,7 @@
               <div class="bonus-icon">💰</div>
               <div class="bonus-content">
                 <h2 class="bonus-title">Бонус за депозит</h2>
-                <p class="bonus-description">Получайте дополнительные средства при каждом пополнении баланса. Процент
-                  бонуса зависит от вашего ранга.</p>
+                <p class="bonus-description">Получайте дополнительные средства при каждом пополнении баланса. Процент бонуса зависит от вашего ранга.</p>
                 <table class="bonus-table">
                   <thead>
                     <tr>
@@ -194,8 +204,7 @@
               <div class="bonus-icon">🎫</div>
               <div class="bonus-content">
                 <h2 class="bonus-title">Промокоды</h2>
-                <p class="bonus-description">Активируйте промокоды и получайте дополнительные бонусы. Следите за нашими
-                  социальными сетями, чтобы не пропустить новые промокоды.</p>
+                <p class="bonus-description">Активируйте промокоды и получайте дополнительные бонусы. Следите за нашими социальными сетями, чтобы не пропустить новые промокоды.</p>
                 <div class="promo-input-group">
                   <input type="text" id="promo-code" class="control-input" placeholder="Введите промокод...">
                   <button id="activate-promo" class="action-btn">Активировать</button>
@@ -230,8 +239,7 @@
                 <div class="referral-link-container">
                   <p>Ваша реферальная ссылка:</p>
                   <div class="ref-link-box">
-                    <input type="text" id="ref-link" class="control-input" readonly
-                      value="https://casino-royale.com/ref/123456">
+                    <input type="text" id="ref-link" class="control-input" readonly value="https://casino-royale.com/ref/123456">
                     <button id="copy-ref-link" class="action-btn">Копировать</button>
                   </div>
                 </div>
@@ -245,8 +253,7 @@
                     <div class="stat-label">Заработано с рефералов</div>
                   </div>
                 </div>
-                <a href="/referral/referral.html" class="action-btn secondary-btn details-btn">Подробнее о реферальной
-                  системе</a>
+                <a href="/referral/referral.html" class="action-btn secondary-btn details-btn">Подробнее о реферальной системе</a>
               </div>
             </div>
             <!-- Специальные предложения -->
@@ -265,8 +272,7 @@
                       <h3 class="offer-title">Турнир "Апрельский джекпот"</h3>
                       <div class="offer-duration">Осталось: 2 дня</div>
                     </div>
-                    <p class="offer-description">Участвуйте в специальном турнире по Джекпоту и выиграйте главный приз в
-                      100,000 ₽.</p>
+                    <p class="offer-description">Участвуйте в специальном турнире по Джекпоту и выиграйте главный приз в 100,000 ₽.</p>
                     <div class="offer-prize">Призовой фонд: 100,000 ₽</div>
                     <a href="#" class="action-btn">Участвовать</a>
                   </div>
@@ -275,8 +281,7 @@
                       <h3 class="offer-title">Майский марафон</h3>
                       <div class="offer-duration">Скоро</div>
                     </div>
-                    <p class="offer-description">Каждый день в течение мая выполняйте задания и получайте особые
-                      награды.</p>
+                    <p class="offer-description">Каждый день в течение мая выполняйте задания и получайте особые награды.</p>
                     <div class="offer-prize">Ежедневные призы + главный приз</div>
                     <a href="#" class="action-btn btn-disabled">Недоступно</a>
                   </div>
@@ -365,10 +370,10 @@
   <script src="./assets/burger-menu.js" defer></script>
   <script src="./assets/range-inputs.js" defer></script>
   <script src="./assets/particles.js" defer></script>
+  <script src="./assets/theme-switcher.js" defer></script>
   <script src="./assets/chat-toggle.js" defer></script>
   <script src="./assets/theme-switcher.js" defer></script>
   <script src="./assets/chat-toggle.js" defer></script>
   <script type="module" crossorigin src="./assets/index-ChTbzDwl.js"></script>
 </body>
-
 </html>

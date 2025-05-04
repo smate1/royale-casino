@@ -61,7 +61,7 @@ footer {
   padding: 1rem;
 }
 /* Стилі для мобільної версії */
-@media (max-width: 1379px) {
+@media (max-width: 1069px) {
   .burger-menu-btn {
     display: inline-flex;
     margin-left: auto;

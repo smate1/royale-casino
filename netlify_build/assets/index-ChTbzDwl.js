@@ -82,11 +82,9 @@ class d {
 			if (this.currentUser) {
 				e.innerHTML = `
         <div class="user-info">
-          <a className="user-profile-link" href="./profile.html">
-						<img src="${this.currentUser.avatar}" alt="${
-											this.currentUser.username
-										}" class="user-avatar">
-					</a>
+          <img src="${this.currentUser.avatar}" alt="${
+					this.currentUser.username
+				}" class="user-avatar">
           <div class="user-details">
             <span class="user-name rank-${this.currentUser.rank.toLowerCase()}">${
 					this.currentUser.username

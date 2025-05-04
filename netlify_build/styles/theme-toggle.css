@@ -29,38 +29,29 @@
   --color-border: #333333;
 }
 
-/* Світла тема в теплих тонах */
+/* Світла тема */
 .light-theme {
-  --color-black: #2b1b0f;
-  --color-dark: #f1e7dc;
-  --color-dark-secondary: #f8f1e7;
-  --color-text: #3b2f25;
-  --color-text-secondary: #5a4537;
-  --color-background: #f7ede3;
-  --color-border: #e4c9a0;
+  --color-black: #f8f9fa;
+  --color-dark: #e9ecef;
+  --color-dark-secondary: #dee2e6;
+  --color-text: #212529;
+  --color-text-secondary: #495057;
+  --color-background: #ffffff;
+  --color-border: #ced4da;
 
-  /* Теплий платиновий (теплий сірий/шоколадний) */
-  --color-platinum: #a67c52;
-
-  /* Оранжевий акцент (використовувати для кнопок, посилань і виділення) */
-  --color-accent: #FF6B00;
+  /* Змінений колір платини для кращого контрасту */
+  --color-platinum: #7c7c7c;
 }
 
-
 /* Темна тема (для явного вказання) */
-/* Темна тема з оранжевими акцентами */
 .dark-theme {
-  --color-black: #0d0a07;                /* Дуже темний теплий відтінок */
-  --color-dark: #1a120b;                 /* Теплий темно-коричневий */
-  --color-dark-secondary: #241a12;       /* Ще трохи тепліший, для карт і секцій */
-  --color-text: #f0eae5;                 /* Світлий бежевий для основного тексту */
-  --color-text-secondary: #c2b5a9;       /* Приглушений беж */
-  --color-background: #12100e;           /* Основний фон */
-  --color-border: #3a2a1a;               /* Теплий темний бордер */
-
-  --color-accent: #FF6B00;               /* Яскраво-оранжевий акцент */
-  --color-accent-hover: #e85c00;         /* Темніший оранжевий для hover */
-  --color-platinum: #9c7b5a;             /* Теплий "металічний" відтінок */
+  --color-black: #121212;
+  --color-dark: #1a1a1a;
+  --color-dark-secondary: #222222;
+  --color-text: #ffffff;
+  --color-text-secondary: #cccccc;
+  --color-background: #0f0f0f;
+  --color-border: #333333;
 }
 
 /* Кнопка перемикання теми */
@@ -77,26 +68,14 @@
   cursor: pointer;
   transition: var(--transition);
   padding: 0;
+  margin-left: 10px;
 }
 
 .theme-toggle-btn:hover {
   background-color: rgba(255, 107, 0, 0.1);
   transform: rotate(15deg);
 }
-html.light-theme .game-field{
-  background-image: url('../images/light-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-html.light-theme  .section-title{
-  color: #f6ebb9;
-  font-weight: 600px;
-}
-
-html.light-theme #logout-btn{
-  background: var(--color-orange-light);
-}
 /* Кнопка згортання/розгортання чату */
 .chat-toggle-btn {
   background: transparent;

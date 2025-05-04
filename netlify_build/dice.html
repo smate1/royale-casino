@@ -9,6 +9,7 @@
   <meta name="description" content="Dice в Casino Royale - бросайте кости и выигрывайте!" />
   <link rel="stylesheet" href="./assets/index-G69gVI9e.css" />
   <link rel="stylesheet" href="./styles/decorations.css" />
+  <link rel="stylesheet" href="./styles/theme-toggle.css" />
   <link rel="stylesheet" href="./styles/burger-menu.css" />
   <link rel="stylesheet" href="./styles/games.css" />
   <link rel="stylesheet" href="./styles/main.css" />
@@ -42,20 +43,6 @@
             </div>
           </div>
           <nav class="main-nav">
-            <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-              </svg>
-            </button>
             <ul class="nav-list">
               <li><a href="./index.html" class="nav-link">Главная</a></li>
               <li><a href="./jackpot.html" class="nav-link">Джекпот</a></li>
@@ -70,6 +57,32 @@
           <div class="auth-container">
             <button id="login-vk" class="auth-btn vk">Войти через VK</button>
             <button id="login-tg" class="auth-btn tg">Войти через TG</button>
+            <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </button>
+            <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </button>
           </div>
         </div>
       </header>
@@ -77,8 +90,7 @@
         <div class="container game-container">
           <div class="game-title-container">
             <h1 class="game-title">Dice</h1>
-            <p class="game-description">Поставьте на исход броска костей и выиграйте! Выбирайте между режимами "Больше"
-              или "Меньше".</p>
+            <p class="game-description">Поставьте на исход броска костей и выиграйте! Выбирайте между режимами "Больше" или "Меньше".</p>
           </div>
           <div class="game-panel">
             <div class="game-field">
@@ -126,11 +138,9 @@
                 <input type="range" id="bet-slider" class="control-slider" min="1" max="1000" value="100">
               </div>
               <div class="control-group">
-                <label for="target-number" class="control-label">Целевое число (<span
-                    id="condition">меньше</span>):</label>
+                <label for="target-number" class="control-label">Целевое число (<span id="condition">меньше</span>):</label>
                 <input type="range" id="target-slider" class="control-slider" min="1" max="99" value="50">
-                <div style="text-align: center; margin-top: 5px; font-size: 18px; font-weight: 600;" id="target-value">
-                  50</div>
+                <div style="text-align: center; margin-top: 5px; font-size: 18px; font-weight: 600;" id="target-value">50</div>
               </div>
               <div class="control-group">
                 <div id="bet-info">
@@ -180,13 +190,13 @@
       </div>
     </div>
   </div>
-  <script src="./assets/burger-menu.js" defer></script>
-  <script src="./assets/range-inputs.js" defer></script>
-  <script src="./assets/particles.js" defer></script>
+    <script src="./assets/burger-menu.js" defer></script>
+    <script src="./assets/range-inputs.js" defer></script>
+    <script src="./assets/particles.js" defer></script>
+  <script src="./assets/theme-switcher.js" defer></script>
   <script src="./assets/chat-toggle.js" defer></script>
   <script src="./assets/theme-switcher.js" defer></script>
   <script src="./assets/chat-toggle.js" defer></script>
-  <script type="module" crossorigin src="./assets/index-ChTbzDwl.js"></script>
+    <script type="module" crossorigin src="./assets/index-ChTbzDwl.js"></script>
 </body>
-
 </html>
