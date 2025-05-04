@@ -63,7 +63,20 @@ html, body {
   align-items: center;
   justify-content: space-between;
 }
+.page-wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
 
+main {
+	flex: 1; /* Займає весь вільний простір */
+}
+
+footer {
+	background: #ccc;
+	padding: 1rem;
+}
 /* Контейнер */
 .container {
   width: 100%;
