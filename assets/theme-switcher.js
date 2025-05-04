@@ -1,3 +1,4 @@
+
 // Скрипт для управління темою (темна/світла тема)
 document.addEventListener('DOMContentLoaded', function () {
 	// Перевіряємо збережену тему в localStorage або використовуємо темну за замовчуванням
@@ -48,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	}
 
+
 	// Встановлюємо початкову тему
 	setTheme(savedTheme)
 
@@ -62,3 +64,5 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 	}
 })
+
+

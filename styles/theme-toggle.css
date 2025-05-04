@@ -83,10 +83,8 @@
   background-color: rgba(255, 107, 0, 0.1);
   transform: rotate(15deg);
 }
-html.light-theme .game-field{
-  background-image: url('../images/light-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+html.light-theme .game-field {
+  background: linear-gradient(135deg, #fdbc1c 0%, #ff914d 50%, #ff5e3a 100%) !important;
 }
 
 html.light-theme .section-title-light{
