@@ -255,7 +255,7 @@ class h {
 		})
 	}
 	navigateToGame(e) {
-		this.games.includes(e) && (window.location.href = `/games/${e}`)
+		this.games.includes(e) && (window.location.href = `./${e}.html`)
 	}
 }
 document.addEventListener('DOMContentLoaded', () => {
