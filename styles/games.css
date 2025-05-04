@@ -1,4 +1,3 @@
-/* Общие стили для игровых страниц */
 .game-container {
   padding: 30px 0;
 }
@@ -21,7 +20,6 @@
   margin: 0 auto;
 }
 
-/* Игровая панель */
 .game-panel {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -34,7 +32,6 @@
   }
 }
 
-/* Игровое поле */
 .game-field {
   background-color: var(--color-dark);
   border-radius: 8px;
@@ -42,7 +39,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Панель ставок и управления */
 .game-controls {
   background-color: var(--color-dark);
   border-radius: 8px;
@@ -72,7 +68,7 @@ html, body {
 }
 
 main {
-  flex: 1; /* Займає весь вільний простір */
+  flex: 1; 
 }
 
 footer {
@@ -142,7 +138,6 @@ footer {
   box-shadow: none;
 }
 
-/* Таблица с историей игр */
 .history-table {
   width: 100%;
   margin-top: 20px;
@@ -167,7 +162,6 @@ footer {
   background-color: rgba(255, 107, 0, 0.05);
 }
 
-/* Стили для Джекпота */
 .jackpot-info {
   text-align: center;
   margin-bottom: 20px;

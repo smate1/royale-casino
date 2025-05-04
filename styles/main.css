@@ -1,7 +1,5 @@
-/* Подключение шрифтов */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* Основные переменные и сброс стилей */
 :root {
   --color-black: #121212;
   --color-dark: #1a1a1a;
@@ -43,7 +41,7 @@ footer {
 }
 
 
-/* Забирає outline тільки при кліку мишкою */
+
 button:focus:not(:focus-visible),
 a:focus:not(:focus-visible) {
   outline: none;
@@ -70,7 +68,7 @@ html, body {
 }
 
 main {
-	flex: 1; /* Займає весь вільний простір */
+	flex: 1;
 }
 
 footer {
@@ -963,7 +961,6 @@ button, .btn {
 
   .logo {
     margin-bottom: 15px;
-    /* justify-content: center; */
   }
 
   .main-nav {

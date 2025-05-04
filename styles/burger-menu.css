@@ -82,7 +82,7 @@ footer {
     transition: right 0.3s ease;
     margin-left: 0;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
-    padding-top: 65px; /* зменшено з 60px до 50px */
+    padding-top: 65px; 
   }
 
   .main-nav.active {
@@ -97,22 +97,22 @@ footer {
   .nav-list li {
     width: 100%;
     text-align: center;
-    margin: 5px 0; /* зменшено з 10px до 5px */
+    margin: 5px 0; 
   }
 
   .nav-link {
     display: block;
-    padding: 12px; /* зменшено з 15px до 12px */
+    padding: 12px; 
     width: 100%;
   }
 
   .auth-container {
     width: 100%;
     justify-content: center;
-    margin-top: 10px; /* зменшено з 15px до 10px */
+    margin-top: 10px; 
   }
 
-  /* Додаємо темний фон при відкритому меню */
+
   .menu-overlay {
     display: none;
     position: fixed;
