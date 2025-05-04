@@ -983,9 +983,7 @@ button, .btn {
     align-items: center;
   }
 }
-.particles-container{
-  display: none !important; 
-}
+
 @media (max-width: 576px) {
   .games-showcase {
     grid-template-columns: 1fr;
