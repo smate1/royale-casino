@@ -819,6 +819,11 @@ button, .btn {
   border-radius: var(--radius);
 }
 
+.promo-banner img{
+  width: 100%;
+  max-height: 225px;
+}
+
 .banner-preview {
   margin-bottom: 15px;
   text-align: center;

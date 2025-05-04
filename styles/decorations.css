@@ -535,8 +535,15 @@ footer {
   background: linear-gradient(to bottom, var(--color-dark), var(--color-dark-secondary));
   border-radius: var(--radius);
   transition: all 0.3s ease;
-  color: #ffffff;
+  color: #000;
   padding: 10px;
+}
+
+
+.dark-theme #chat-input,
+.dark-theme .control-input,
+.dark-theme #ref-link {
+  color: #fff !important;
 }
 
 #chat-input:focus, .control-input:focus {
@@ -573,4 +580,8 @@ footer {
 
 .main-content {
   animation: fadeIn 0.5s ease-out forwards;
+}
+
+.main-content-page.main-content{
+  animation: none;
 }
