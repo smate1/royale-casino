@@ -108,7 +108,7 @@
 }
 
 .chat-collapsed.chat-container {
-  max-height: 60px; /* Висота заголовка з невеликим відступом */
+  max-height: 62px; /* Висота заголовка з невеликим відступом */
   overflow: hidden;
 }
 
