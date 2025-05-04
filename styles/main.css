@@ -1001,7 +1001,6 @@ button, .btn {
   }
 
   .auth-container {
-    flex-direction: column;
     width: 100%;
   }
 
