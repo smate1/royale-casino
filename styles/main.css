@@ -76,7 +76,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .page-wrapper::after {
@@ -344,7 +344,7 @@ button:hover::after,
 
 .promo-content {
 	position: relative;
-	z-index: 1;
+	/* z-index: 1; */
 	text-align: center;
 }
 
