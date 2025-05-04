@@ -1,9 +1,0 @@
-<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="60" cy="60" r="55" stroke="#FF6B00" stroke-width="5"/>
-  <circle cx="60" cy="60" r="45" fill="#1a1a1a" stroke="#FF6B00" stroke-width="2"/>
-  <circle cx="60" cy="60" r="20" fill="#FF6B00"/>
-  <path d="M60 26L62.5 43.5H80L65.75 54.5L70 70L60 60L50 70L54.25 54.5L40 43.5H57.5L60 26Z" fill="#FF6B00"/>
-  <path d="M60 94L57.5 76.5H40L54.25 65.5L50 50L60 60L70 50L65.75 65.5L80 76.5H62.5L60 94Z" fill="#FF6B00"/>
-  <path d="M26 60L43.5 57.5V40L54.5 54.25L70 50L60 60L70 70L54.5 65.75L43.5 80V62.5L26 60Z" fill="#FF6B00"/>
-  <path d="M94 60L76.5 62.5V80L65.5 65.75L50 70L60 60L50 50L65.5 54.25L76.5 40V57.5L94 60Z" fill="#FF6B00"/>
-</svg>
