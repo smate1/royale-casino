@@ -28,7 +28,7 @@
 }
 .page-wrapper {
 	position: relative;
-	z-index: 10;
+	z-index: 100;
 }
 .page-wrapper::after {
 	position: absolute;
@@ -54,6 +54,11 @@
 	z-index: -1;
 	background-repeat: no-repeat;
   opacity: .4;
+}
+.games-showcase,
+.game-card{
+	position: relative;
+	z-index: 100 !important;
 }
 * {
 	margin: 0;
