@@ -55,11 +55,6 @@ body.menu-open {
   -webkit-tap-highlight-color: transparent; 
 }
 
-.auth-btn {
-  font-size: 13px; /* зменшено з 14px до 13px */
-  padding: 6px 12px; /* зменшено з 8px 15px до 6px 12px */
-}
-
 html, body {
   height: 100%;
   margin: 0;
