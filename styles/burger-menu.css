@@ -64,6 +64,9 @@ footer {
 @media (max-width: 1379px) {
   .burger-menu-btn {
     display: inline-flex;
+    position: fixed;
+    right: 25px;
+    top: 25px;
     margin-left: auto;
     margin-right: 10px;
   }
