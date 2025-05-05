@@ -90,6 +90,9 @@ html.light-theme .jackpot-amount,
 html.light-theme .x50-multiplier{
   color: #000;
 }
+html.light-theme .terms-content{
+  background: var(--color-dark);
+}
 html.light-theme .section-title-light{
   color: #f6ebb9;
   font-weight: 600px;
