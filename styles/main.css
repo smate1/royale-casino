@@ -76,34 +76,34 @@ body {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-  /* z-index: 10; */
+	/* z-index: 10; */
 }
 
 .page-wrapper::after {
 	content: '';
-  position: absolute;
-  background-image: url('../images/pirot.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 565px;
-  height: 770px;
-  left: -285px;
-  top: 100px;
-  z-index: 0;
-  opacity: .5;
+	position: absolute;
+	background-image: url('../images/pirot.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 565px;
+	height: 770px;
+	left: -285px;
+	top: 100px;
+	z-index: 0;
+	opacity: 0.5;
 }
 .page-wrapper::before {
 	content: '';
-  position: absolute;
-  background-image: url('../images/pirot-2.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 960px;
-  height: 655px;
-  right: -385px;
-  bottom: 0;
-  z-index: 0;
-  opacity: .5;
+	position: absolute;
+	background-image: url('../images/pirot-2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 960px;
+	height: 655px;
+	right: -385px;
+	bottom: 0;
+	z-index: 0;
+	opacity: 0.5;
 }
 
 main {
@@ -198,7 +198,7 @@ button:hover::after,
 	border-bottom: 1px solid var(--color-border);
 	position: sticky;
 	top: 0;
-	z-index: 9;
+	z-index: 11;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -1490,12 +1490,20 @@ button:hover::after,
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-
+.main-nav-mobile {
+	display: none;
+}
 @media (max-width: 1379px) {
-  .page-wrapper::after,
-  .page-wrapper::before{
-    display: none;
-  }
+	.header {
+		z-index: 9;
+	}
+	.main-nav-mobile {
+		display: block;
+	}
+	.page-wrapper::after,
+	.page-wrapper::before {
+		display: none;
+	}
 	.header-container {
 		flex-direction: column;
 		align-items: stretch;

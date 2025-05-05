@@ -114,8 +114,13 @@ button,
 	border-bottom: 1px solid var(--color-border);
 	position: sticky;
 	top: 0;
-	z-index: 9;
+	z-index: 11;
 }
+
+.main-nav-mobile{
+	display: none;
+}
+
 .header-container {
 	display: flex;
 	align-items: center;
@@ -1091,10 +1096,21 @@ button,
 		display: block;
 	}
 }
+
+.main-nav-mobile{
+	display: none;
+}
+
 @media (max-width: 1379px) {
+	.main-nav-mobile{
+		display: block;
+	}
 	.main-content-wrapper::after,
 	.main-content-wrapper::before{
 		display: none;
+	}
+	.header{
+		z-index: 9;
 	}
 	.main-content{
 		z-index: 0;
