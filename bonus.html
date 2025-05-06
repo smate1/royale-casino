@@ -5,6 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Бонусы - Casino Royale</title>
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme') || 'dark'
+      document.documentElement.classList.add(theme === 'light' ? 'light-theme' : 'dark-theme')
+    })()
+  </script>
   <link rel="stylesheet" href="./assets/index-G69gVI9e.css" />
   <link rel="stylesheet" href="./styles/main.css" />
   <link rel="stylesheet" href="./styles/burger-menu.css" />
@@ -391,10 +397,9 @@
   <script src="./assets/burger-menu.js" defer></script>
   <script src="./assets/range-inputs.js" defer></script>
   <script src="./assets/particles.js" defer></script>
-  <script src="./assets/chat-toggle.js" defer></script>
   <script src="./assets/theme-switcher.js" defer></script>
-  <script src="./assets/chat-toggle.js" defer></script>
   <script type="module" crossorigin src="./assets/index-ChTbzDwl.js"></script>
+  <script src="./assets/global-chat.js" defer></script>
 </body>
 
 </html>

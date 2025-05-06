@@ -5,6 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Профиль - Casino Royale</title>
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme') || 'dark'
+      document.documentElement.classList.add(theme === 'light' ? 'light-theme' : 'dark-theme')
+    })()
+  </script>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <meta name="description"
     content="Профиль пользователя в Casino Royale - управляйте своим аккаунтом и следите за статистикой." />
@@ -105,13 +111,13 @@
               <div class="corner-decoration bottom-left"></div>
               <div class="corner-decoration bottom-right"></div>
               <div class="profile-avatar">
-                <img src="./images/profile.svg" alt="Аватар пользователя" class="avatar-img" />
+                <img src="./images/profile.svg" alt="Аватар пользователя" class="avatar-img" id="profile-avatar-img" />
               </div>
               <div class="profile-info">
-                <h1 class="profile-username">Имя пользователя</h1>
+                <h1 class="profile-username" id="profile-username">Загрузка...</h1>
                 <div class="profile-badges">
-                  <span class="badge rank-badge bronze">[BRONZE]</span>
-                  <span class="badge join-date">Дата регистрации: 01.01.2023</span>
+                  <span class="badge rank-badge" id="profile-rank">[BRONZE]</span>
+                  <span class="badge join-date" id="profile-join-date">Дата регистрации: 01.01.2023</span>
                 </div>
               </div>
             </div>
@@ -126,9 +132,9 @@
                 <div class="balance-info">
                   <div class="balance-item">
                     <span class="balance-label">Доступно:</span>
-                    <span class="balance-value">₽10,000.00</span>
+                    <span class="balance-value" id="profile-balance">₽0.00</span>
                   </div>
-                  <div class="balance-buttons">
+                  <div class="balance-buttons" id="balance-buttons">
                     <button class="action-btn deposit-btn">Пополнить</button>
                     <button class="action-btn withdraw-btn">Вывести</button>
                   </div>
@@ -143,30 +149,30 @@
                 <h2 class="section-title">Статистика</h2>
                 <div class="stats-grid">
                   <div class="stat-item">
-                    <span class="stat-value">₽25,000</span>
+                    <span class="stat-value" id="total-deposits">₽0</span>
                     <span class="stat-label">Всего депозитов</span>
                   </div>
                   <div class="stat-item">
-                    <span class="stat-value">₽15,000</span>
+                    <span class="stat-value" id="total-withdrawals">₽0</span>
                     <span class="stat-label">Всего выводов</span>
                   </div>
                   <div class="stat-item">
-                    <span class="stat-value">₽100,000</span>
+                    <span class="stat-value" id="total-won">₽0</span>
                     <span class="stat-label">Всего выиграно</span>
                   </div>
                   <div class="stat-item">
-                    <span class="stat-value">₽90,000</span>
+                    <span class="stat-value" id="total-lost">₽0</span>
                     <span class="stat-label">Всего проиграно</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="profile-tabs">
+            <div class="profile-tabs" id="profile-tabs">
               <div class="tabs-header">
                 <button class="tab-btn active" data-tab="history">История игр</button>
                 <button class="tab-btn" data-tab="transactions">История транзакций</button>
-                <button class="tab-btn" data-tab="settings">Настройки</button>
+                <button class="tab-btn" data-tab="settings" id="settings-tab-btn">Настройки</button>
               </div>
 
               <div class="tab-content active" id="history-tab">
@@ -186,42 +192,8 @@
                         <th>Выигрыш</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                        <td>01.05.2023 14:30</td>
-                        <td>Dice</td>
-                        <td>₽500</td>
-                        <td>Выигрыш</td>
-                        <td class="win">+₽980</td>
-                      </tr>
-                      <tr>
-                        <td>01.05.2023 14:28</td>
-                        <td>X50</td>
-                        <td>₽200</td>
-                        <td>Проигрыш</td>
-                        <td class="loss">-₽200</td>
-                      </tr>
-                      <tr>
-                        <td>01.05.2023 14:25</td>
-                        <td>Джекпот</td>
-                        <td>₽1000</td>
-                        <td>Выигрыш</td>
-                        <td class="win">+₽4500</td>
-                      </tr>
-                      <tr>
-                        <td>01.05.2023 14:20</td>
-                        <td>Мины</td>
-                        <td>₽300</td>
-                        <td>Проигрыш</td>
-                        <td class="loss">-₽300</td>
-                      </tr>
-                      <tr>
-                        <td>01.05.2023 14:15</td>
-                        <td>Dice</td>
-                        <td>₽250</td>
-                        <td>Выигрыш</td>
-                        <td class="win">+₽490</td>
-                      </tr>
+                    <tbody id="games-history-tbody">
+                      <!-- Данные будут добавлены динамически -->
                     </tbody>
                   </table>
                 </div>
@@ -243,37 +215,8 @@
                         <th>Статус</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                        <td>05.05.2023 10:15</td>
-                        <td>Пополнение</td>
-                        <td class="deposit">+₽5000</td>
-                        <td><span class="status-badge success">Успешно</span></td>
-                      </tr>
-                      <tr>
-                        <td>02.05.2023 18:30</td>
-                        <td>Вывод</td>
-                        <td class="withdraw">-₽2000</td>
-                        <td><span class="status-badge success">Успешно</span></td>
-                      </tr>
-                      <tr>
-                        <td>01.05.2023 12:00</td>
-                        <td>Пополнение</td>
-                        <td class="deposit">+₽10000</td>
-                        <td><span class="status-badge success">Успешно</span></td>
-                      </tr>
-                      <tr>
-                        <td>28.04.2023 20:45</td>
-                        <td>Вывод</td>
-                        <td class="withdraw">-₽3000</td>
-                        <td><span class="status-badge success">Успешно</span></td>
-                      </tr>
-                      <tr>
-                        <td>25.04.2023 09:30</td>
-                        <td>Пополнение</td>
-                        <td class="deposit">+₽5000</td>
-                        <td><span class="status-badge success">Успешно</span></td>
-                      </tr>
+                    <tbody id="transactions-history-tbody">
+                      <!-- Данные будут добавлены динамически -->
                     </tbody>
                   </table>
                 </div>
@@ -360,13 +303,214 @@
   <script src="./assets/burger-menu.js" defer></script>
   <script src="./assets/range-inputs.js" defer></script>
   <script src="./assets/particles.js" defer></script>
-  <script src="./assets/chat-toggle.js" defer></script>
+  <script src="./assets/global-chat.js" defer></script>
   <script src="./assets/theme-switcher.js" defer></script>
-  <script src="./assets/chat-toggle.js" defer></script>
   <script type="module" crossorigin src="./assets/index-ChTbzDwl.js"></script>
   <script>
-    // Скрипт для работы с вкладками профиля
+    // Скрипт для работы с вкладками профиля и получения данных пользователя
     document.addEventListener('DOMContentLoaded', function () {
+      // Получаем параметры из URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const userParam = urlParams.get('user');
+
+      // Константы для рангов
+      const RANKS = {
+        'bronze': { min: 5000, name: 'BRONZE', class: 'bronze' },
+        'silver': { min: 10000, name: 'SILVER', class: 'silver' },
+        'platinum': { min: 20000, name: 'PLATINUM', class: 'platinum' },
+        'gold': { min: 50000, name: 'GOLD', class: 'gold' },
+        'sapphire': { min: 100000, name: 'SAPPHIRE', class: 'sapphire' },
+        'diamond': { min: 250000, name: 'DIAMOND', class: 'diamond' },
+        'legend': { min: 500000, name: 'LEGEND', class: 'legend' }
+      };
+
+      // Определяем, свой профиль или чужой
+      const isOwnProfile = !userParam;
+      const username = userParam || 'Мой профиль';
+
+      // Обновляем элементы страницы
+      document.getElementById('profile-username').textContent = username;
+      document.title = `${username} - Профиль | Casino Royale`;
+
+      // Генерируем случайные данные для демонстрации
+      function getRandomAmount(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+
+      function getRandomDate(start, end) {
+        return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+      }
+
+      // Форматирование суммы
+      function formatAmount(amount) {
+        return '₽' + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+      }
+
+      // Форматирование даты
+      function formatDate(date) {
+        return `${date.getDate().toString().padStart(2, '0')}.${(date.getMonth() + 1).toString().padStart(2, '0')}.${date.getFullYear()} ${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`;
+      }
+
+      // Вычисляем ранг в зависимости от суммы депозитов
+      function calculateRank(totalDeposits) {
+        let userRank = RANKS.bronze;
+
+        for (const key in RANKS) {
+          if (totalDeposits >= RANKS[key].min) {
+            userRank = RANKS[key];
+          }
+        }
+
+        return userRank;
+      }
+
+      // Генерируем/получаем данные пользователя
+      function generateUserData() {
+        // Для демонстрации генерируем случайные данные
+        const totalDeposits = getRandomAmount(1000, 300000);
+        const totalWithdrawals = getRandomAmount(0, totalDeposits * 0.8);
+        const totalWon = getRandomAmount(totalDeposits * 0.5, totalDeposits * 2);
+        const totalLost = getRandomAmount(totalDeposits * 0.3, totalDeposits * 1.5);
+        const balance = totalDeposits - totalWithdrawals + totalWon - totalLost;
+
+        // Вычисляем ранг пользователя
+        const userRank = calculateRank(totalDeposits);
+
+        // Генерируем дату регистрации
+        const endDate = new Date();
+        const startDate = new Date(2022, 0, 1);
+        const joinDate = getRandomDate(startDate, endDate);
+
+        return {
+          username: username,
+          balance: balance,
+          totalDeposits: totalDeposits,
+          totalWithdrawals: totalWithdrawals,
+          totalWon: totalWon,
+          totalLost: totalLost,
+          rank: userRank,
+          joinDate: joinDate
+        };
+      }
+
+      // Заполняем историю игр
+      function populateGamesHistory(count = 10) {
+        const gamesHistoryTbody = document.getElementById('games-history-tbody');
+        const games = ['Dice', 'X50', 'Джекпот', 'Мины'];
+        const endDate = new Date();
+        const startDate = new Date(endDate.getTime() - 30 * 24 * 60 * 60 * 1000); // 30 дней назад
+
+        let html = '';
+
+        for (let i = 0; i < count; i++) {
+          const game = games[Math.floor(Math.random() * games.length)];
+          const bet = getRandomAmount(100, 2000);
+          const isWin = Math.random() > 0.5;
+          const multiplier = isWin ? Math.random() * 3 + 1 : 0;
+          const result = isWin ? 'Выигрыш' : 'Проигрыш';
+          const winAmount = isWin ? Math.floor(bet * multiplier) : -bet;
+          const gameDate = getRandomDate(startDate, endDate);
+
+          html += `
+            <tr>
+              <td>${formatDate(gameDate)}</td>
+              <td>${game}</td>
+              <td>₽${bet}</td>
+              <td>${result}</td>
+              <td class="${isWin ? 'win' : 'loss'}">${isWin ? '+' : ''}₽${Math.abs(winAmount)}</td>
+            </tr>
+          `;
+        }
+
+        gamesHistoryTbody.innerHTML = html;
+      }
+
+      // Заполняем историю транзакций
+      function populateTransactionsHistory(count = 10) {
+        const transactionsHistoryTbody = document.getElementById('transactions-history-tbody');
+        const types = ['Пополнение', 'Вывод'];
+        const endDate = new Date();
+        const startDate = new Date(endDate.getTime() - 30 * 24 * 60 * 60 * 1000); // 30 дней назад
+
+        let html = '';
+
+        for (let i = 0; i < count; i++) {
+          const isDeposit = Math.random() > 0.3; // больше депозитов, чем выводов
+          const type = isDeposit ? types[0] : types[1];
+          const amount = getRandomAmount(1000, 10000);
+          const status = Math.random() > 0.1 ? 'Успешно' : 'В обработке';
+          const transactionDate = getRandomDate(startDate, endDate);
+
+          html += `
+            <tr>
+              <td>${formatDate(transactionDate)}</td>
+              <td>${type}</td>
+              <td class="${isDeposit ? 'deposit' : 'withdraw'}">${isDeposit ? '+' : '-'}₽${amount}</td>
+              <td><span class="status-badge ${status === 'Успешно' ? 'success' : 'pending'}">${status}</span></td>
+            </tr>
+          `;
+        }
+
+        transactionsHistoryTbody.innerHTML = html;
+      }
+
+      // Загружаем и отображаем данные пользователя
+      function loadUserProfile() {
+        const userData = generateUserData();
+
+        // Обновляем информацию профиля
+        document.getElementById('profile-username').textContent = userData.username;
+        document.getElementById('profile-rank').textContent = `[${userData.rank.name}]`;
+        document.getElementById('profile-rank').className = `badge rank-badge ${userData.rank.class}`;
+        document.getElementById('profile-join-date').textContent = `Дата регистрации: ${formatDate(userData.joinDate).split(' ')[0]}`;
+        document.getElementById('profile-balance').textContent = formatAmount(userData.balance);
+        document.getElementById('total-deposits').textContent = formatAmount(userData.totalDeposits);
+        document.getElementById('total-withdrawals').textContent = formatAmount(userData.totalWithdrawals);
+        document.getElementById('total-won').textContent = formatAmount(userData.totalWon);
+        document.getElementById('total-lost').textContent = formatAmount(userData.totalLost);
+
+        // Генерируем аватар на основе имени
+        const colors = ['#FF6B00', '#FF9500', '#FFB700', '#4CAF50', '#2196F3', '#673AB7', '#E91E63'];
+        const colorIndex = userData.username.length % colors.length;
+        const avatarSvg = `
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+            <rect width="100" height="100" fill="${colors[colorIndex]}" />
+            <text x="50" y="50" font-size="40" fill="white" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-weight="bold">
+              ${userData.username.substring(0, 2).toUpperCase()}
+            </text>
+          </svg>
+        `;
+
+        // Используем безопасный метод кодирования в base64
+        function utf8_to_b64(str) {
+          return btoa(unescape(encodeURIComponent(str)));
+        }
+        const base64Svg = utf8_to_b64(avatarSvg);
+
+        const avatarImg = document.getElementById('profile-avatar-img');
+        avatarImg.src = `data:image/svg+xml;base64,${base64Svg}`;
+
+        // Если это чужой профиль, скрываем кнопки управления балансом и вкладку настроек
+        if (!isOwnProfile) {
+          const balanceButtons = document.getElementById('balance-buttons');
+          balanceButtons.style.display = 'none';
+
+          const settingsTabBtn = document.getElementById('settings-tab-btn');
+          settingsTabBtn.style.display = 'none';
+        } else {
+          // Заполняем поля формы для своего профиля
+          document.getElementById('username').value = userData.username;
+        }
+
+        // Заполняем историю
+        populateGamesHistory();
+        populateTransactionsHistory();
+      }
+
+      // Загружаем профиль
+      loadUserProfile();
+
+      // Обработка вкладок
       const tabButtons = document.querySelectorAll('.tab-btn');
       const tabContents = document.querySelectorAll('.tab-content');
 

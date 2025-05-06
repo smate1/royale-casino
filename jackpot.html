@@ -5,6 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Джекпот - Casino Royale</title>
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme') || 'dark'
+      document.documentElement.classList.add(theme === 'light' ? 'light-theme' : 'dark-theme')
+    })()
+  </script>
   <link rel="stylesheet" crossorigin href="./assets/index-G69gVI9e.css">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <meta name="description" content="Джекпот в Casino Royale - испытайте удачу и выиграйте джекпот!" />
@@ -12,7 +18,7 @@
   <link rel="stylesheet" href="./styles/burger-menu.css" />
   <link rel="stylesheet" href="./styles/games.css" />
   <link rel="stylesheet" href="./styles/main.css" />
-  <link rel="stylesheet" href="./styles/theme-toggle.css" />
+  <link rel="stylesheet" href="./styles/theme-toggle.css">
 </head>
 
 <body>
@@ -27,8 +33,8 @@
     </div>
     <nav class="main-nav main-nav-mobile">
       <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="5"></circle>
           <line x1="12" y1="1" x2="12" y2="3"></line>
           <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -197,12 +203,11 @@
     </div>
   </div>
   <script src="./assets/burger-menu.js" defer></script>
+  <script src="./assets/theme-switcher.js" defer></script>
   <script src="./assets/range-inputs.js" defer></script>
   <script src="./assets/particles.js" defer></script>
-  <script src="./assets/theme-switcher.js" defer></script>
-  <script src="./assets/chat-toggle.js" defer></script>
-  <script src="./assets/chat-toggle.js" defer></script>
   <script type="module" crossorigin src="./assets/index-ChTbzDwl.js"></script>
+  <script src="./assets/global-chat.js" defer></script>
 </body>
 
 </html>

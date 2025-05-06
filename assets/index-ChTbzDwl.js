@@ -242,7 +242,7 @@ class m {
 }
 class h {
 	constructor() {
-		o(this, 'games', ['jackpot', 'x50', 'dice', 'mines'])
+		o(this, 'games', ['jackpot', 'x50', 'dice', 'mines', 'bonus'])
 		this.initGameCards()
 	}
 	initGameCards() {

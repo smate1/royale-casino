@@ -5,6 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>X50 - Casino Royale</title>
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme') || 'dark'
+      document.documentElement.classList.add(theme === 'light' ? 'light-theme' : 'dark-theme')
+    })()
+  </script>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <meta name="description" content="X50 в Casino Royale - умножайте ставки до x50 раз!" />
   <link rel="stylesheet" crossorigin href="./assets/index-G69gVI9e.css">
@@ -201,10 +207,10 @@
   <script src="./assets/burger-menu.js" defer></script>
   <script src="./assets/range-inputs.js" defer></script>
   <script src="./assets/particles.js" defer></script>
-  <script src="./assets/chat-toggle.js" defer></script>
+  
   <script src="./assets/theme-switcher.js" defer></script>
-  <script src="./assets/chat-toggle.js" defer></script>
   <script type="module" crossorigin src="./assets/index-ChTbzDwl.js"></script>
+  <script src="./assets/global-chat.js" defer></script>
 </body>
 
 </html>

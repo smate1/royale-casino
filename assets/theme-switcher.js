@@ -12,7 +12,15 @@ document.addEventListener('DOMContentLoaded', function () {
 		localStorage.setItem('theme', theme)
 		updateThemeButtonIcons(theme) // <== оновлюємо обидві іконки
 	}
-
+	// Додаємо обробник до всіх кнопок з класом .theme-toggle-btn
+	document.querySelectorAll('.theme-toggle-btn').forEach(btn => {
+		btn.addEventListener('click', function () {
+			const currentTheme = localStorage.getItem('theme') || 'dark'
+			const newTheme = currentTheme === 'dark' ? 'light' : 'dark'
+			setTheme(newTheme)
+		})
+	})
+})
 	function updateThemeButtonIcons(theme) {
 		const toggleButtons = document.querySelectorAll('.theme-toggle-btn')
 		toggleButtons.forEach(btn => {
@@ -44,12 +52,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	setTheme(savedTheme)
 
-	// Додаємо обробник до всіх кнопок з класом .theme-toggle-btn
-	document.querySelectorAll('.theme-toggle-btn').forEach(btn => {
-		btn.addEventListener('click', function () {
-			const currentTheme = localStorage.getItem('theme') || 'dark'
-			const newTheme = currentTheme === 'dark' ? 'light' : 'dark'
-			setTheme(newTheme)
-		})
-	})
-})
+

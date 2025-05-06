@@ -5,6 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Casino Royale - Лучшие Онлайн Игры</title>
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme') || 'dark'
+      document.documentElement.classList.add(theme === 'light' ? 'light-theme' : 'dark-theme')
+    })()
+  </script>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <meta name="description"
     content="Casino Royale - честные игры онлайн! Джекпот, x50, Dice, Мины. Проверь свою удачу." />
@@ -103,7 +109,7 @@
       <main class="main-content main-content-page main-content-wrapper">
         <div class="container">
           <!-- Промо-баннер -->
-          <div class="promo-banner">
+          <div class="promo-banner" id="game-card" data-game="bonus">
             <div class="corner-decoration top-left"></div>
             <div class="corner-decoration top-right"></div>
             <div class="corner-decoration bottom-left"></div>
@@ -266,12 +272,13 @@
       </div>
     </div>
   </div>
+  <script src="./assets/global-chat.js" defer></script>
   <script src="./assets/burger-menu.js" defer></script>
   <script src="./assets/range-inputs.js" defer></script>
   <script src="./assets/particles.js" defer></script>
-  <script src="./assets/theme-switcher.js" defer></script>
   <script src="./assets/chat-toggle.js" defer></script>
   <script type="module" crossorigin src="./assets/index-ChTbzDwl.js"></script>
+  <script src="./assets/theme-switcher.js" defer></script>
 </body>
 
 </html>

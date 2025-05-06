@@ -2,155 +2,171 @@
 
 /* Основні налаштування тем */
 :root {
-  /* Спільні кольори для обох тем */
-  --color-orange: #ff6b00;
-  --color-orange-hover: #ff8c00;
-  --color-orange-light: #ffab5e;
-  --color-orange-dark: #cc5500;
-  --color-bronze: #cd7f32;
-  --color-silver: #c0c0c0;
-  --color-gold: #ffd700;
-  --color-platinum: #e5e4e2;
-  --color-sapphire: #0f52ba;
-  --color-diamond: #b9f2ff;
-  --color-legend: #ff00ff;
-  --font-primary: 'Inter', sans-serif;
-  --radius: 4px;
-  --spacing: 8px;
-  --transition: all 0.3s ease;
+	--color-orange: #ff6b00;
+	--color-orange-hover: #ff8c00;
+	--color-orange-light: #ffab5e;
+	--color-orange-dark: #cc5500;
+	--color-bronze: #cd7f32;
+	--color-silver: #c0c0c0;
+	--color-gold: #ffd700;
+	--color-platinum: #e5e4e2;
+	--color-sapphire: #0f52ba;
+	--color-diamond: #b9f2ff;
+	--color-legend: #ff00ff;
+	--font-primary: 'Inter', sans-serif;
+	--radius: 4px;
+	--spacing: 8px;
+	--transition: all 0.3s ease;
 
-  /* Темна тема за замовчуванням */
-  --color-black: #121212;
-  --color-dark: #1a1a1a;
-  --color-dark-secondary: #222222;
-  --color-text: #ffffff;
-  --color-text-secondary: #cccccc;
-  --color-background: #0f0f0f;
-  --color-border: #333333;
+	--color-black: #121212;
+	--color-dark: #1a1a1a;
+	--color-dark-secondary: #222222;
+	--color-text: #ffffff;
+	--color-text-secondary: #cccccc;
+	--color-background: #0f0f0f;
+	--color-border: #333333;
 }
 
 /* Світла тема в теплих тонах */
 .light-theme {
-  --color-black: #2b1b0f;
-  --color-dark: #f1e7dc;
-  --color-dark-secondary: #f8f1e7;
-  --color-text: #3b2f25;
-  --color-text-secondary: #5a4537;
-  --color-background: #f7ede3;
-  --color-border: #e4c9a0;
+	--color-black: #2b1b0f;
+	--color-dark: #f1e7dc;
+	--color-dark-secondary: #f8f1e7;
+	--color-text: #3b2f25;
+	--color-text-secondary: #5a4537;
+	--color-background: #f7ede3;
+	--color-border: #e4c9a0;
 
-  /* Теплий платиновий (теплий сірий/шоколадний) */
-  --color-platinum: #a67c52;
+	/* Теплий платиновий (теплий сірий/шоколадний) */
+	--color-platinum: #a67c52;
 
-  /* Оранжевий акцент (використовувати для кнопок, посилань і виділення) */
-  --color-accent: #FF6B00;
+	/* Оранжевий акцент (використовувати для кнопок, посилань і виділення) */
+	--color-accent: #ff6b00;
 }
-
 
 /* Темна тема (для явного вказання) */
 /* Темна тема з оранжевими акцентами */
 .dark-theme {
-  --color-black: #0d0a07;                /* Дуже темний теплий відтінок */
-  --color-dark: #1a120b;                 /* Теплий темно-коричневий */
-  --color-dark-secondary: #241a12;       /* Ще трохи тепліший, для карт і секцій */
-  --color-text: #f0eae5;                 /* Світлий бежевий для основного тексту */
-  --color-text-secondary: #c2b5a9;       /* Приглушений беж */
-  --color-background: #12100e;           /* Основний фон */
-  --color-border: #3a2a1a;               /* Теплий темний бордер */
+	--color-black: #0d0a07; /* Дуже темний теплий відтінок */
+	--color-dark: #1a120b; /* Теплий темно-коричневий */
+	--color-dark-secondary: #241a12; /* Ще трохи тепліший, для карт і секцій */
+	--color-text: #f0eae5; /* Світлий бежевий для основного тексту */
+	--color-text-secondary: #c2b5a9; /* Приглушений беж */
+	--color-background: #12100e; /* Основний фон */
+	--color-border: #3a2a1a; /* Теплий темний бордер */
 
-  --color-accent: #FF6B00;               /* Яскраво-оранжевий акцент */
-  --color-accent-hover: #e85c00;         /* Темніший оранжевий для hover */
-  --color-platinum: #9c7b5a;             /* Теплий "металічний" відтінок */
+	--color-accent: #ff6b00; /* Яскраво-оранжевий акцент */
+	--color-accent-hover: #e85c00; /* Темніший оранжевий для hover */
+	--color-platinum: #9c7b5a; /* Теплий "металічний" відтінок */
 }
 
 /* Кнопка перемикання теми */
 .theme-toggle-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 1px solid var(--color-border);
-  color: var(--color-orange);
-  cursor: pointer;
-  transition: var(--transition);
-  padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 1px solid var(--color-border);
+	color: var(--color-orange);
+	cursor: pointer;
+	transition: var(--transition);
+	padding: 0;
 }
 
 .theme-toggle-btn:hover {
-  background-color: rgba(255, 107, 0, 0.1);
-  transform: rotate(15deg);
+	background-color: rgba(255, 107, 0, 0.1);
+	transform: rotate(15deg);
 }
 html.light-theme .game-field {
-  background: linear-gradient(135deg, #fdbc1c 0%, #ff914d 50%, #ff5e3a 100%) !important;
-}
-html.light-theme .jackpot-amount,
-html.light-theme .x50-multiplier{
-  color: #000;
-}
-html.light-theme .terms-content{
-  background: var(--color-dark);
-}
-html.light-theme .section-title-light{
-  color: #f6ebb9;
-  font-weight: 600px;
+	background: linear-gradient(
+		135deg,
+		#fdbc1c 0%,
+		#ff914d 50%,
+		#ff5e3a 100%
+	) !important;
 }
 
-html.light-theme #logout-btn{
-  background: var(--color-orange-light);
+html.light-theme .live-wins-container,
+html.light-theme .live-wins-header,
+html.light-theme .global-chat-header,
+html.light-theme .chat-message-bubble {
+  background: var(--color-dark);
+}
+html.light-theme .global-chat-input{
+	color: #000;
+}
+html.light-theme .history-table thead th {
+	color: var(--color-orange);
+}
+
+html.light-theme .jackpot-amount,
+html.light-theme .x50-multiplier {
+	color: #000;
+}
+html.light-theme .terms-content {
+	background: var(--color-dark);
+}
+html.light-theme .section-title-light {
+	color: #f6ebb9;
+	font-weight: 600px;
+}
+
+html.light-theme #logout-btn {
+	background: var(--color-orange-light);
 }
 /* Кнопка згортання/розгортання чату */
 .chat-toggle-btn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: var(--color-orange);
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: var(--transition);
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	color: var(--color-orange);
+	width: 32px;
+	height: 32px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	transition: var(--transition);
 }
 
 .chat-toggle-btn:hover {
-  background-color: rgba(255, 107, 0, 0.1);
+	background-color: rgba(255, 107, 0, 0.1);
 }
 
 /* Згорнутий чат */
 .chat-collapsed {
-  min-height: auto;
-  max-height: auto;
+	min-height: auto;
+	max-height: auto;
 }
 
 /* Змінюємо відображення блоку чату для збільшення/зменшення висоти блоку */
 .chat-container {
-  transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .chat-collapsed.chat-container {
-  max-height: 62px; /* Висота заголовка з невеликим відступом */
-  overflow: hidden;
+	max-height: 62px; /* Висота заголовка з невеликим відступом */
+	overflow: hidden;
 }
 
 .chat-collapsed .chat-messages,
 .chat-collapsed .chat-input-container {
-  display: none;
+	display: none;
 }
 
 /* Відступ для розділу ranks-container коли чат згорнутий */
 .features-section {
-  gap: 20px;
-  transition: all 0.3s ease;
+	gap: 20px;
+	transition: all 0.3s ease;
 }
 
 /* При згорнутому чаті збільшуємо ранги */
 .features-section .ranks-container {
-  transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 /* Адаптація основних елементів для світлої теми */
@@ -166,7 +182,7 @@ html.light-theme #logout-btn{
 .light-theme .profile-header,
 .light-theme .stats-card,
 .light-theme .tab-content {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .light-theme .chat-messages,
@@ -177,19 +193,19 @@ html.light-theme #logout-btn{
 .light-theme .stat-item,
 .light-theme .balance-item,
 .light-theme .rank {
-  background-color: rgba(0, 0, 0, 0.03);
-  border-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.03);
+	border-color: rgba(0, 0, 0, 0.1);
 }
 
 .light-theme .nav-link:hover,
 .light-theme .nav-link.active {
-  background-color: rgba(255, 107, 0, 0.1);
+	background-color: rgba(255, 107, 0, 0.1);
 }
 
 /* Розташування елементів в хедері при світлій темі */
 .light-theme .auth-container,
 .dark-theme .auth-container {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+	display: flex;
+	gap: 10px;
+	align-items: center;
 }
