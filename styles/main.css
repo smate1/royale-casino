@@ -2782,7 +2782,7 @@ button:hover::after,
 	align-items: center;
 	padding: 12px 15px;
 	border-bottom: 1px solid var(--color-border);
-	background: linear-gradient(90deg, var(--color-dark), #212121);
+	background: var(--color-dark);
 }
 
 .global-chat-title {
@@ -3002,7 +3002,7 @@ button:hover::after,
 .live-wins-container {
 	position: fixed;
 	top: 80px;
-	left: 20px;
+	left: 15px;
 	width: 280px;
 	max-height: 400px;
 	background: linear-gradient(135deg, var(--color-dark), #212121);
@@ -3020,7 +3020,7 @@ button:hover::after,
 	align-items: center;
 	padding: 12px 15px;
 	border-bottom: 1px solid var(--color-border);
-	background: linear-gradient(90deg, var(--color-dark), #212121);
+	background: var(--color-dark);
 }
 
 .live-wins-title {
@@ -3105,6 +3105,7 @@ button:hover::after,
 	border-bottom: 1px solid var(--color-border);
 	transition: background-color 0.3s ease;
 	animation: fadeIn 0.5s;
+	background: var(--color-dark-secondary);
 }
 
 .live-win-item:hover {
@@ -3189,7 +3190,7 @@ button:hover::after,
 	color: white;
 	font-weight: 600;
 	letter-spacing: 1px;
-	font-size: 8px;
+	font-size: 10px;
 }
 
 .live-wins-collapsed {
