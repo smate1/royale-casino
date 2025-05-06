@@ -73,7 +73,7 @@ footer {
 
 .container {
 	width: 100%;
-	max-width: 1440px;
+	max-width: 1440vw;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -235,6 +235,7 @@ button,
 	top: 20px;
 	height: 200px;
 	z-index: -1;
+	display: none;
 }
 .main-content-wrapper::after {
 	position: absolute;
@@ -246,6 +247,7 @@ button,
 	top: 20px;
 	height: 200px;
 	z-index: -1;
+	display: none;
 }
 
 .games-showcase {
@@ -370,6 +372,7 @@ button,
 	box-shadow: 0 4px 12px #0003;
 	z-index: 100;
 }
+
 .features-section {
 	position: relative;
 	z-index: 100;

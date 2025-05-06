@@ -88,7 +88,7 @@ body {
 	width: 565px;
 	height: 770px;
 	left: -285px;
-	top: 100px;
+	top: -90px;
 	z-index: 0;
 	opacity: 0.5;
 }
@@ -117,7 +117,7 @@ footer {
 /* Контейнер */
 .container {
 	width: 100%;
-	max-width: 1440px;
+	max-width: 1440vw;
 	margin: 0 auto;
 	padding: 0 20px;
 }
