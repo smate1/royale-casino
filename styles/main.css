@@ -739,6 +739,19 @@ button:hover::after,
 	transform: translateY(-2px);
 }
 
+/* Додаємо стиль для імені користувача в чаті на головній сторінці */
+.message-username {
+  font-weight: bold;
+  color: #FF6B00;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.message-username:hover {
+  text-decoration: underline;
+  color: #ff8c40;
+}
+
 /* Ранги */
 .ranks-container {
 	background: linear-gradient(135deg, var(--color-dark), #212121);

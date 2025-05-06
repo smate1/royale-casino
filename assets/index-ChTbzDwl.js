@@ -202,12 +202,12 @@ class m {
 			this.messages.forEach(e => {
 				var r
 				const t = document.createElement('div')
-				;(t.className = 'chat-message'),
+				;;(t.className = 'chat-message chat-message-main'),
 					(t.innerHTML = `
         <div class="message-header">
-          <span class="message-username rank-${e.userRank.toLowerCase()}">${
+          <span class="message-username rank-${e.userRank.toLowerCase()}" data-username="${
 						e.username
-					}</span>
+					}">${e.username}</span>
           <span class="message-time">${this.formatTime(e.timestamp)}</span>
         </div>
         <div class="message-content">${e.content}</div>
@@ -215,6 +215,16 @@ class m {
 					(r = this.messagesContainer) == null || r.appendChild(t)
 			}),
 			(this.messagesContainer.scrollTop = this.messagesContainer.scrollHeight))
+
+		// Додаємо обробник кліку на ім'я користувача
+		const usernameElements = this.messagesContainer.querySelectorAll('.message-username');
+		usernameElements.forEach(el => {
+			el.style.cursor = 'pointer';
+			el.addEventListener('click', () => {
+				const username = el.dataset.username;
+				window.location.href = `./profile.html?user=${encodeURIComponent(username)}`;
+			});
+		});
 	}
 	formatTime(e) {
 		return e.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })

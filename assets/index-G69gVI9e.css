@@ -336,6 +336,26 @@ button,
 	color: var(--color-orange);
 }
 
+.message-username {
+  font-weight: bold;
+  color: #FF6B00;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.message-username:hover {
+  text-decoration: underline;
+  color: #ff8c40;
+}
+
+.message-time{
+	font-size: 10px;
+	color: var(--color-text-secondary);
+}
+.chat-message-main{
+	display: flex;
+	flex-direction: column;
+}
 .chat-message-username:hover {
 	text-decoration: underline;
 }
