@@ -95,11 +95,9 @@ html.light-theme .global-chat-header,
 html.light-theme .chat-message-bubble {
   background: var(--color-dark);
 }
+
 html.light-theme .global-chat-input{
 	color: #000;
-}
-html.light-theme .history-table thead th {
-	color: var(--color-orange);
 }
 
 html.light-theme .jackpot-amount,
@@ -109,7 +107,8 @@ html.light-theme .x50-multiplier {
 html.light-theme .terms-content {
 	background: var(--color-dark);
 }
-html.light-theme .section-title-light {
+html.light-theme .section-title-light,
+html.light-theme .section-title.section-title-ight {
 	color: #f6ebb9;
 	font-weight: 600px;
 }
