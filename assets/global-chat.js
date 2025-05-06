@@ -36,13 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
           </svg>
         </button>
-      `;
+      `
       document.body.insertAdjacentHTML('beforeend', chatHTML);
     }
 
     if (!document.querySelector('.live-wins-container')) {
       const winsHTML = `
-        <div class="live-wins-container">
+        <div class="live-wins-container live-wins-collapsed">
           <div class="live-wins-header">
             <h3 class="live-wins-title">
               <span class="live-indicator"></span>
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <button class="live-wins-toggle" id="live-wins-toggle">
           <span>ВЫИГРЫШИ</span>
         </button>
-      `;
+      `
       document.body.insertAdjacentHTML('beforeend', winsHTML);
     }
   }
@@ -90,22 +90,22 @@ document.addEventListener('DOMContentLoaded', function() {
   const isWinsHidden = localStorage.getItem('liveWinsHidden') === 'true';
 
   // Установка начальных состояний
-  if (!isChatHidden) {
-    globalChatContainer.classList.remove('global-chat-hidden');
-  }
+  // if (!isChatHidden) {
+  //   globalChatContainer.classList.remove('global-chat-hidden');
+  // }
 
-  if (isChatCollapsed) {
-    globalChatContainer.classList.add('global-chat-collapsed');
-    globalChatMinimizeBtn.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="6 9 12 15 18 9"></polyline>
-      </svg>
-    `;
-  }
+  // if (isChatCollapsed) {
+  //   globalChatContainer.classList.add('global-chat-collapsed');
+  //   globalChatMinimizeBtn.innerHTML = `
+  //     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  //       <polyline points="6 9 12 15 18 9"></polyline>
+  //     </svg>
+  //   `;
+  // }
 
-  if (isWinsHidden) {
-    liveWinsContainer.classList.add('live-wins-collapsed');
-  }
+  // if (isWinsHidden) {
+  //   liveWinsContainer.classList.add('live-wins-collapsed');
+  // }
 
   // Функции для управления чатом
   function toggleChatVisibility() {
