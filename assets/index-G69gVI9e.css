@@ -74,7 +74,8 @@ footer {
 
 .container {
 	width: 100%;
-	max-width: 1440vw;
+	max-width: 85vw;
+	/* max-width: 1440px; */
 	margin: 0 auto;
 	padding: 0 35px;
 }
@@ -337,22 +338,22 @@ button,
 }
 
 .message-username {
-  font-weight: bold;
-  color: #FF6B00;
-  cursor: pointer;
-  transition: color 0.2s;
+	font-weight: bold;
+	color: #ff6b00;
+	cursor: pointer;
+	transition: color 0.2s;
 }
 
 .message-username:hover {
-  text-decoration: underline;
-  color: #ff8c40;
+	text-decoration: underline;
+	color: #ff8c40;
 }
 
-.message-time{
+.message-time {
 	font-size: 10px;
 	color: var(--color-text-secondary);
 }
-.chat-message-main{
+.chat-message-main {
 	display: flex;
 	flex-direction: column;
 }
@@ -590,6 +591,7 @@ button,
 	text-decoration: none;
 	display: flex;
 	align-items: center;
+	white-space: nowrap;
 }
 
 .logo span {
@@ -638,6 +640,7 @@ button,
 	transition: var(--transition);
 	font-weight: 500;
 	position: relative;
+	display: inline-block;
 }
 .nav-link:hover,
 .nav-link.active {
@@ -656,6 +659,7 @@ button,
 	align-items: center;
 	justify-content: space-between;
 	gap: 10px;
+	margin-left: 15px;
 }
 .auth-btn {
 	font-size: 14px;
@@ -694,7 +698,7 @@ button,
 	top: 20px;
 	height: 200px;
 	z-index: -1;
-	display: none;
+	/* display: none; */
 }
 .main-content-wrapper::after {
 	position: absolute;
@@ -706,7 +710,7 @@ button,
 	top: 20px;
 	height: 200px;
 	z-index: -1;
-	display: none;
+	/* display: none; */
 }
 
 .games-showcase {
@@ -1531,10 +1535,7 @@ button,
 	.main-nav-mobile {
 		display: block;
 	}
-	.main-content-wrapper::after,
-	.main-content-wrapper::before {
-		display: none;
-	}
+
 	.header {
 		z-index: 9;
 	}
@@ -1595,8 +1596,13 @@ button,
 }
 
 @media (max-width: 991px) {
+	.main-content-wrapper::after,
+	.main-content-wrapper::before {
+		display: none;
+	}
 	.container {
 		padding: 0 20px;
+		max-width: 1440px;
 	}
 	.features-section {
 		grid-template-columns: 1fr;
