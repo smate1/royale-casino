@@ -88,7 +88,9 @@ html.light-theme .game-field {
 		#ff5e3a 100%
 	) !important;
 }
-
+html.light-theme #chat-input{
+	color: #000;
+}
 html.light-theme .live-wins-container,
 html.light-theme .live-wins-header,
 html.light-theme .global-chat-header,
