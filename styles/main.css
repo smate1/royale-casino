@@ -276,7 +276,7 @@ button:hover::after,
 }
 
 .auth-btn {
-	font-size: 12px;
+	font-size: 11px;
 	padding: 10px 20px;
 	position: relative;
 	overflow: hidden;
