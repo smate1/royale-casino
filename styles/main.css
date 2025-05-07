@@ -285,7 +285,7 @@ button:hover::after,
 	transition: all 0.3s ease;
 }
 .user-details{
-	font-size: 11px;
+	font-size: 14px;
 }
 .auth-btn.vk {
 	background-color: #4c75a3;

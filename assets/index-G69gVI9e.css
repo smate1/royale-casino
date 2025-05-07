@@ -1598,7 +1598,9 @@ button,
 	max-width: 38px;
 	max-height: 38px;
 }
-
+.user-details{
+	font-size: 14px;
+}
 @media (max-width: 991px) {
 	.main-content-wrapper::after,
 	.main-content-wrapper::before {
