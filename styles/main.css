@@ -1517,6 +1517,9 @@ button:hover::after,
 	.header {
 		z-index: 9;
 	}
+	.auth-container{
+		margin-left: 0;
+	}
 	.main-nav-mobile {
 		display: block;
 	}

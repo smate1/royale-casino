@@ -1536,6 +1536,10 @@ button,
 		display: block;
 	}
 
+	.auth-container{
+		margin-left: 0;
+	}
+
 	.header {
 		z-index: 9;
 	}
