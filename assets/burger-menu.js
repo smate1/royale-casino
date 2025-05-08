@@ -33,3 +33,25 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+  function scaleSite() {
+		const baseWidth = 1690
+		const baseHeight = 900
+		const wrapper = document.querySelector('.page-wrapper')
+		const scalerWrapper = document.querySelector('.scaler-wrapper')
+
+		const winWidth = window.innerWidth
+
+		if (winWidth > 1380) {
+			const scale = winWidth / baseWidth
+			wrapper.style.transform = `scale(${scale})`
+			scalerWrapper.style.minHeight = `${baseHeight * scale}px`
+		} else {
+			// Скидаємо масштаб і висоту
+			wrapper.style.transform = 'none'
+			scalerWrapper.style.minHeight = 'auto'
+		}
+	}
+
+	window.addEventListener('resize', scaleSite)
+	window.addEventListener('load', scaleSite)

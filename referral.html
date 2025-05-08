@@ -63,252 +63,254 @@
       </ul>
     </nav>
     <div class="menu-overlay"></div>
-    <div class="page-wrapper">
-      <header class="header">
-        <div class="container header-container">
-          <div class="header__top">
-            <a href="./index.html" class="logo">
-              <span class="logo-text">Casino Royale</span>
-            </a>
+    <header class="header">
+      <div class="container header-container">
+        <div class="header__top">
+          <a href="./index.html" class="logo">
+            <span class="logo-text">Casino Royale</span>
+          </a>
 
-          </div>
-          <nav class="main-nav">
-            <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-              </svg>
-            </button>
-            <ul class="nav-list">
-              <li><a href="./index.html" class="nav-link">Главная</a></li>
-              <li><a href="./jackpot.html" class="nav-link">Джекпот</a></li>
-              <li><a href="./x50.html" class="nav-link">X50</a></li>
-              <li><a href="./dice.html" class="nav-link">Dice</a></li>
-              <li><a href="./mines.html" class="nav-link">Мины</a></li>
-              <li><a href="./bonus.html" class="nav-link">Бонусы</a></li>
-              <li><a href="./referral.html" class="nav-link active">Рефералы</a></li>
-              <li><a href="./profile.html" class="nav-link">Профиль</a></li>
-            </ul>
-          </nav>
-          <div class="auth-container">
-            <button id="login-vk" class="auth-btn vk">Войти через VK</button>
-            <button id="login-tg" class="auth-btn tg">Войти через TG</button>
-          </div>
         </div>
-      </header>
-      <main class="main-content">
-        <div class="container game-container">
-          <div class="game-title-container">
-            <h1 class="game-title">Реферальная система</h1>
-            <p class="game-description">Приглашайте друзей в Casino Royale и получайте 5% с каждого их депозита
-              пожизненно.</p>
-          </div>
-          <div class="referral-dashboard">
-            <!-- Основная информация -->
-            <div class="ref-main-panel">
-              <div class="ref-stats-container">
-                <div class="ref-stat">
-                  <div class="stat-value" id="total-referrals">0</div>
-                  <div class="stat-label">Всего рефералов</div>
-                </div>
-                <div class="ref-stat">
-                  <div class="stat-value" id="active-referrals">0</div>
-                  <div class="stat-label">Активных рефералов</div>
-                </div>
-                <div class="ref-stat">
-                  <div class="stat-value" id="total-earnings">0 ₽</div>
-                  <div class="stat-label">Всего заработано</div>
-                </div>
-                <div class="ref-stat">
-                  <div class="stat-value" id="this-month-earnings">0 ₽</div>
-                  <div class="stat-label">Заработано в этом месяце</div>
-                </div>
-              </div>
-              <div class="ref-link-section">
-                <h2 class="section-title">Ваша реферальная ссылка</h2>
-                <p class="ref-link-description">Поделитесь этой ссылкой с друзьями и получайте награды, когда они
-                  регистрируются и делают депозиты.</p>
-                <div class="ref-link-container">
-                  <input type="text" id="ref-link" class="control-input" readonly
-                    value="https://casino-royale.com/ref/123456">
-                  <button id="copy-ref-link" class="action-btn">Копировать</button>
-                </div>
-                <div class="ref-share-buttons">
-                  <button class="share-btn share-vk">Поделиться в VK</button>
-                  <button class="share-btn share-tg">Поделиться в TG</button>
-                  <button class="share-btn share-twitter">Поделиться в Twitter</button>
-                </div>
-              </div>
-              <div class="ref-promo-materials">
-                <h2 class="section-title">Промо-материалы</h2>
-                <p class="promo-description">Используйте эти баннеры для продвижения Casino Royale на ваших ресурсах.
-                </p>
-                <div class="promo-banners">
-                  <div class="promo-banner">
-                    <div class="banner-preview">
-                      <img src="./images/banner-1.jpg" alt="Баннер Casino Royale">
-                    </div>
-                    <div class="banner-actions">
-                      <button class="action-btn secondary-btn">Скачать</button>
-                      <button class="action-btn secondary-btn">Код для вставки</button>
-                    </div>
-                  </div>
-                  <div class="promo-banner">
-                    <div class="banner-preview">
-                      <img src="./images/banner-2.jpg" alt="Баннер Casino Royale">
-                    </div>
-                    <div class="banner-actions">
-                      <button class="action-btn secondary-btn">Скачать</button>
-                      <button class="action-btn secondary-btn">Код для вставки</button>
-                    </div>
-                  </div>
-                  <div class="promo-banner">
-                    <div class="banner-preview">
-                      <img src="./images/banner-3.jpg" alt="Баннер Casino Royale">
-                    </div>
-                    <div class="banner-actions">
-                      <button class="action-btn secondary-btn">Скачать</button>
-                      <button class="action-btn secondary-btn">Код для вставки</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Таблица рефералов и история выплат -->
-            <div class="ref-tables-panel">
-              <div class="ref-referrals-list">
-                <h2 class="section-title">Ваши рефералы</h2>
-                <div class="table-container">
-                  <table class="referrals-table">
-                    <thead>
-                      <tr>
-                        <th>Пользователь</th>
-                        <th>Дата регистрации</th>
-                        <th>Всего депозитов</th>
-                        <th>Ваш доход</th>
-                        <th>Статус</th>
-                      </tr>
-                    </thead>
-                    <tbody id="referrals-tbody">
-                      <tr class="empty-table">
-                        <td colspan="5">У вас пока нет рефералов</td>
-                      </tr>
-                      <!-- Данные будут добавлены динамически -->
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <div class="ref-earnings-history">
-                <h2 class="section-title">История выплат</h2>
-                <div class="table-container">
-                  <table class="earnings-table">
-                    <thead>
-                      <tr>
-                        <th>Дата</th>
-                        <th>Реферал</th>
-                        <th>Тип</th>
-                        <th>Сумма</th>
-                      </tr>
-                    </thead>
-                    <tbody id="earnings-tbody">
-                      <tr class="empty-table">
-                        <td colspan="4">История выплат пуста</td>
-                      </tr>
-                      <!-- Данные будут добавлены динамически -->
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <!-- Информация о программе -->
-            <div class="ref-info-panel">
-              <h2 class="section-title">Как работает реферальная программа?</h2>
-              <div class="ref-steps">
-                <div class="ref-step">
-                  <div class="step-number">1</div>
-                  <div class="step-content">
-                    <h3 class="step-title">Пригласите друзей</h3>
-                    <p class="step-description">Поделитесь своей реферальной ссылкой с друзьями через социальные сети
-                      или
-                      другие каналы.</p>
-                  </div>
-                </div>
-                <div class="ref-step">
-                  <div class="step-number">2</div>
-                  <div class="step-content">
-                    <h3 class="step-title">Ваши друзья регистрируются</h3>
-                    <p class="step-description">Когда ваши друзья переходят по вашей ссылке и регистрируются, они
-                      автоматически становятся вашими рефералами.</p>
-                  </div>
-                </div>
-                <div class="ref-step">
-                  <div class="step-number">3</div>
-                  <div class="step-content">
-                    <h3 class="step-title">Получайте вознаграждение</h3>
-                    <p class="step-description">Вы получаете 5% от каждого депозита ваших рефералов пожизненно. Чем
-                      больше
-                      у вас рефералов и чем активнее они играют, тем больше вы зарабатываете.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="ref-faq">
-                <h2 class="section-title">Часто задаваемые вопросы</h2>
-                <div class="faq-item">
-                  <h3 class="faq-question">Как быстро я получу вознаграждение?</h3>
-                  <p class="faq-answer">Вознаграждение зачисляется на ваш баланс моментально после того, как ваш реферал
-                    сделает депозит.</p>
-                </div>
-                <div class="faq-item">
-                  <h3 class="faq-question">Есть ли ограничения по количеству рефералов?</h3>
-                  <p class="faq-answer">Нет, вы можете пригласить неограниченное количество друзей и получать
-                    вознаграждение с каждого.</p>
-                </div>
-                <div class="faq-item">
-                  <h3 class="faq-question">Можно ли вывести заработанное вознаграждение?</h3>
-                  <p class="faq-answer">Да, вы можете вывести заработанное вознаграждение так же, как и обычный выигрыш,
-                    на любую из доступных платежных систем.</p>
-                </div>
-                <div class="faq-item">
-                  <h3 class="faq-question">Что будет, если я сам зарегистрируюсь по своей реферальной ссылке?</h3>
-                  <p class="faq-answer">Система автоматически определяет такие попытки. Создание мультиаккаунтов
-                    запрещено
-                    правилами Casino Royale и может привести к блокировке аккаунтов.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <nav class="main-nav">
+          <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <ul class="nav-list">
+            <li><a href="./index.html" class="nav-link">Главная</a></li>
+            <li><a href="./jackpot.html" class="nav-link">Джекпот</a></li>
+            <li><a href="./x50.html" class="nav-link">X50</a></li>
+            <li><a href="./dice.html" class="nav-link">Dice</a></li>
+            <li><a href="./mines.html" class="nav-link">Мины</a></li>
+            <li><a href="./bonus.html" class="nav-link">Бонусы</a></li>
+            <li><a href="./referral.html" class="nav-link active">Рефералы</a></li>
+            <li><a href="./profile.html" class="nav-link">Профиль</a></li>
+          </ul>
+        </nav>
+        <div class="auth-container">
+          <button id="login-vk" class="auth-btn vk">Войти через VK</button>
+          <button id="login-tg" class="auth-btn tg">Войти через TG</button>
         </div>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-logo">
-              <span class="logo-text">Casino Royale</span>
-              <p class="copyright">© 2022-2025 Casino Royale</p>
+      </div>
+    </header>
+    <div class="scaler-wrapper">
+      <div class="page-wrapper">
+        <main class="main-content">
+          <div class="container game-container">
+            <div class="game-title-container">
+              <h1 class="game-title">Реферальная система</h1>
+              <p class="game-description">Приглашайте друзей в Casino Royale и получайте 5% с каждого их депозита
+                пожизненно.</p>
             </div>
-            <div class="footer-links">
-              <ul class="footer-nav">
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./support.html">Поддержка</a></li>
-                <li><a href="./terms.html">Условия использования</a></li>
-              </ul>
-            </div>
-            <div class="footer-social">
-              <a href="#" class="social-link vk">VK</a>
-              <a href="#" class="social-link tg">TG</a>
+            <div class="referral-dashboard">
+              <!-- Основная информация -->
+              <div class="ref-main-panel">
+                <div class="ref-stats-container">
+                  <div class="ref-stat">
+                    <div class="stat-value" id="total-referrals">0</div>
+                    <div class="stat-label">Всего рефералов</div>
+                  </div>
+                  <div class="ref-stat">
+                    <div class="stat-value" id="active-referrals">0</div>
+                    <div class="stat-label">Активных рефералов</div>
+                  </div>
+                  <div class="ref-stat">
+                    <div class="stat-value" id="total-earnings">0 ₽</div>
+                    <div class="stat-label">Всего заработано</div>
+                  </div>
+                  <div class="ref-stat">
+                    <div class="stat-value" id="this-month-earnings">0 ₽</div>
+                    <div class="stat-label">Заработано в этом месяце</div>
+                  </div>
+                </div>
+                <div class="ref-link-section">
+                  <h2 class="section-title">Ваша реферальная ссылка</h2>
+                  <p class="ref-link-description">Поделитесь этой ссылкой с друзьями и получайте награды, когда они
+                    регистрируются и делают депозиты.</p>
+                  <div class="ref-link-container">
+                    <input type="text" id="ref-link" class="control-input" readonly
+                      value="https://casino-royale.com/ref/123456">
+                    <button id="copy-ref-link" class="action-btn">Копировать</button>
+                  </div>
+                  <div class="ref-share-buttons">
+                    <button class="share-btn share-vk">Поделиться в VK</button>
+                    <button class="share-btn share-tg">Поделиться в TG</button>
+                    <button class="share-btn share-twitter">Поделиться в Twitter</button>
+                  </div>
+                </div>
+                <div class="ref-promo-materials">
+                  <h2 class="section-title">Промо-материалы</h2>
+                  <p class="promo-description">Используйте эти баннеры для продвижения Casino Royale на ваших ресурсах.
+                  </p>
+                  <div class="promo-banners">
+                    <div class="promo-banner">
+                      <div class="banner-preview">
+                        <img src="./images/banner-1.jpg" alt="Баннер Casino Royale">
+                      </div>
+                      <div class="banner-actions">
+                        <button class="action-btn secondary-btn">Скачать</button>
+                        <button class="action-btn secondary-btn">Код для вставки</button>
+                      </div>
+                    </div>
+                    <div class="promo-banner">
+                      <div class="banner-preview">
+                        <img src="./images/banner-2.jpg" alt="Баннер Casino Royale">
+                      </div>
+                      <div class="banner-actions">
+                        <button class="action-btn secondary-btn">Скачать</button>
+                        <button class="action-btn secondary-btn">Код для вставки</button>
+                      </div>
+                    </div>
+                    <div class="promo-banner">
+                      <div class="banner-preview">
+                        <img src="./images/banner-3.jpg" alt="Баннер Casino Royale">
+                      </div>
+                      <div class="banner-actions">
+                        <button class="action-btn secondary-btn">Скачать</button>
+                        <button class="action-btn secondary-btn">Код для вставки</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Таблица рефералов и история выплат -->
+              <div class="ref-tables-panel">
+                <div class="ref-referrals-list">
+                  <h2 class="section-title">Ваши рефералы</h2>
+                  <div class="table-container">
+                    <table class="referrals-table">
+                      <thead>
+                        <tr>
+                          <th>Пользователь</th>
+                          <th>Дата регистрации</th>
+                          <th>Всего депозитов</th>
+                          <th>Ваш доход</th>
+                          <th>Статус</th>
+                        </tr>
+                      </thead>
+                      <tbody id="referrals-tbody">
+                        <tr class="empty-table">
+                          <td colspan="5">У вас пока нет рефералов</td>
+                        </tr>
+                        <!-- Данные будут добавлены динамически -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="ref-earnings-history">
+                  <h2 class="section-title">История выплат</h2>
+                  <div class="table-container">
+                    <table class="earnings-table">
+                      <thead>
+                        <tr>
+                          <th>Дата</th>
+                          <th>Реферал</th>
+                          <th>Тип</th>
+                          <th>Сумма</th>
+                        </tr>
+                      </thead>
+                      <tbody id="earnings-tbody">
+                        <tr class="empty-table">
+                          <td colspan="4">История выплат пуста</td>
+                        </tr>
+                        <!-- Данные будут добавлены динамически -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- Информация о программе -->
+              <div class="ref-info-panel">
+                <h2 class="section-title">Как работает реферальная программа?</h2>
+                <div class="ref-steps">
+                  <div class="ref-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                      <h3 class="step-title">Пригласите друзей</h3>
+                      <p class="step-description">Поделитесь своей реферальной ссылкой с друзьями через социальные сети
+                        или
+                        другие каналы.</p>
+                    </div>
+                  </div>
+                  <div class="ref-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                      <h3 class="step-title">Ваши друзья регистрируются</h3>
+                      <p class="step-description">Когда ваши друзья переходят по вашей ссылке и регистрируются, они
+                        автоматически становятся вашими рефералами.</p>
+                    </div>
+                  </div>
+                  <div class="ref-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                      <h3 class="step-title">Получайте вознаграждение</h3>
+                      <p class="step-description">Вы получаете 5% от каждого депозита ваших рефералов пожизненно. Чем
+                        больше
+                        у вас рефералов и чем активнее они играют, тем больше вы зарабатываете.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="ref-faq">
+                  <h2 class="section-title">Часто задаваемые вопросы</h2>
+                  <div class="faq-item">
+                    <h3 class="faq-question">Как быстро я получу вознаграждение?</h3>
+                    <p class="faq-answer">Вознаграждение зачисляется на ваш баланс моментально после того, как ваш реферал
+                      сделает депозит.</p>
+                  </div>
+                  <div class="faq-item">
+                    <h3 class="faq-question">Есть ли ограничения по количеству рефералов?</h3>
+                    <p class="faq-answer">Нет, вы можете пригласить неограниченное количество друзей и получать
+                      вознаграждение с каждого.</p>
+                  </div>
+                  <div class="faq-item">
+                    <h3 class="faq-question">Можно ли вывести заработанное вознаграждение?</h3>
+                    <p class="faq-answer">Да, вы можете вывести заработанное вознаграждение так же, как и обычный выигрыш,
+                      на любую из доступных платежных систем.</p>
+                  </div>
+                  <div class="faq-item">
+                    <h3 class="faq-question">Что будет, если я сам зарегистрируюсь по своей реферальной ссылке?</h3>
+                    <p class="faq-answer">Система автоматически определяет такие попытки. Создание мультиаккаунтов
+                      запрещено
+                      правилами Casino Royale и может привести к блокировке аккаунтов.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </main>
+      </div>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-text">Casino Royale</span>
+            <p class="copyright">© 2022-2025 Casino Royale</p>
+          </div>
+          <div class="footer-links">
+            <ul class="footer-nav">
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./support.html">Поддержка</a></li>
+              <li><a href="./terms.html">Условия использования</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-link vk">VK</a>
+            <a href="#" class="social-link tg">TG</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Модальные окна -->
     <div class="modal" id="auth-modal">

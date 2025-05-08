@@ -63,283 +63,285 @@
       </ul>
     </nav>
     <div class="menu-overlay"></div>
-    <div class="page-wrapper">
-      <header class="header">
-        <div class="container header-container">
-          <div class="header__top">
-            <a href="./index.html" class="logo">
-              <span class="logo-text">Casino Royale</span>
-            </a>
+    <header class="header">
+      <div class="container header-container">
+        <div class="header__top">
+          <a href="./index.html" class="logo">
+            <span class="logo-text">Casino Royale</span>
+          </a>
 
-          </div>
-          <nav class="main-nav">
-            <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-              </svg>
-            </button>
-            <ul class="nav-list">
-              <li><a href="./index.html" class="nav-link">Главная</a></li>
-              <li><a href="./jackpot.html" class="nav-link">Джекпот</a></li>
-              <li><a href="./x50.html" class="nav-link">X50</a></li>
-              <li><a href="./dice.html" class="nav-link">Dice</a></li>
-              <li><a href="./mines.html" class="nav-link">Мины</a></li>
-              <li><a href="./bonus.html" class="nav-link active">Бонусы</a></li>
-              <li><a href="./referral.html" class="nav-link">Рефералы</a></li>
-              <li><a href="./profile.html" class="nav-link">Профиль</a></li>
-            </ul>
-          </nav>
-          <div class="auth-container">
-            <button id="login-vk" class="auth-btn vk">Войти через VK</button>
-            <button id="login-tg" class="auth-btn tg">Войти через TG</button>
-          </div>
         </div>
-      </header>
-      <main class="main-content">
-        <div class="container game-container">
-          <div class="game-title-container">
-            <h1 class="game-title">Бонусы</h1>
-            <p class="game-description">Получайте дополнительные вознаграждения и увеличивайте свой баланс с нашими
-              бонусами и акциями.</p>
-          </div>
-          <div class="bonuses-container">
-            <!-- Ежедневный бонус -->
-            <div class="bonus-card daily-bonus">
-              <div class="corner-decoration top-left"></div>
-              <div class="corner-decoration top-right"></div>
-              <div class="corner-decoration bottom-left"></div>
-              <div class="corner-decoration bottom-right"></div>
-              <div class="bonus-icon">🎁</div>
-              <div class="bonus-content">
-                <h2 class="bonus-title">Ежедневный бонус</h2>
-                <p class="bonus-description">Получайте бонус каждый день. Размер бонуса зависит от вашего ранга.</p>
-                <table class="bonus-table">
-                  <thead>
-                    <tr>
-                      <th>Ранг</th>
-                      <th>Сумма бонуса</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><span class="rank-bronze">[BRONZE]</span></td>
-                      <td>до 250 ₽</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-silver">[SILVER]</span></td>
-                      <td>до 500 ₽</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-platinum">[PLATINUM]</span></td>
-                      <td>до 1000 ₽</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-gold">[GOLD]</span></td>
-                      <td>до 1500 ₽</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-sapphire">[SAPPHIRE]</span></td>
-                      <td>до 2500 ₽</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-diamond">[DIAMOND]</span></td>
-                      <td>до 4000 ₽</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-legend">[LEGEND]</span></td>
-                      <td>до 6000 ₽</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <button id="claim-daily-bonus" class="action-btn">Получить бонус</button>
-                <div id="bonus-cooldown" class="bonus-cooldown">Следующий бонус доступен через: <span>12:34:56</span>
-                </div>
-              </div>
-            </div>
-            <!-- Бонус за депозит -->
-            <div class="bonus-card deposit-bonus">
-              <div class="corner-decoration top-left"></div>
-              <div class="corner-decoration top-right"></div>
-              <div class="corner-decoration bottom-left"></div>
-              <div class="corner-decoration bottom-right"></div>
-              <div class="bonus-icon">💰</div>
-              <div class="bonus-content">
-                <h2 class="bonus-title">Бонус за депозит</h2>
-                <p class="bonus-description">Получайте дополнительные средства при каждом пополнении баланса. Процент
-                  бонуса зависит от вашего ранга.</p>
-                <table class="bonus-table">
-                  <thead>
-                    <tr>
-                      <th>Ранг</th>
-                      <th>Бонус к депозиту</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><span class="rank-bronze">[BRONZE]</span></td>
-                      <td>0.5%</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-silver">[SILVER]</span></td>
-                      <td>0.75%</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-platinum">[PLATINUM]</span></td>
-                      <td>1%</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-gold">[GOLD]</span></td>
-                      <td>1.25%</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-sapphire">[SAPPHIRE]</span></td>
-                      <td>1.5%</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-diamond">[DIAMOND]</span></td>
-                      <td>2%</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-legend">[LEGEND]</span></td>
-                      <td>2.5%</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <button id="deposit-btn" class="action-btn">Пополнить баланс</button>
-              </div>
-            </div>
-            <!-- Промокоды -->
-            <div class="bonus-card promo-bonus">
-              <div class="corner-decoration top-left"></div>
-              <div class="corner-decoration top-right"></div>
-              <div class="corner-decoration bottom-left"></div>
-              <div class="corner-decoration bottom-right"></div>
-              <div class="bonus-icon">🎫</div>
-              <div class="bonus-content">
-                <h2 class="bonus-title">Промокоды</h2>
-                <p class="bonus-description">Активируйте промокоды и получайте дополнительные бонусы. Следите за нашими
-                  социальными сетями, чтобы не пропустить новые промокоды.</p>
-                <div class="promo-input-group">
-                  <input type="text" id="promo-code" class="control-input" placeholder="Введите промокод...">
-                  <button id="activate-promo" class="action-btn">Активировать</button>
-                </div>
-                <div class="active-promos">
-                  <h3>Активные промокоды</h3>
-                  <div class="promo-list">
-                    <div class="promo-item">
-                      <div class="promo-item-code">WELCOME2025</div>
-                      <div class="promo-item-reward">500 ₽ при первом депозите</div>
-                      <div class="promo-item-expiry">до 31.05.2025</div>
-                    </div>
-                    <div class="promo-item">
-                      <div class="promo-item-code">WEEKEND50</div>
-                      <div class="promo-item-reward">50% к депозиту в выходные</div>
-                      <div class="promo-item-expiry">до 30.06.2025</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Реферальный бонус -->
-            <div class="bonus-card referral-bonus">
-              <div class="corner-decoration top-left"></div>
-              <div class="corner-decoration top-right"></div>
-              <div class="corner-decoration bottom-left"></div>
-              <div class="corner-decoration bottom-right"></div>
-              <div class="bonus-icon">👥</div>
-              <div class="bonus-content">
-                <h2 class="bonus-title">Реферальный бонус</h2>
-                <p class="bonus-description">Приглашайте друзей и получайте 5% от всех их депозитов.</p>
-                <div class="referral-link-container">
-                  <p>Ваша реферальная ссылка:</p>
-                  <div class="ref-link-box">
-                    <input type="text" id="ref-link" class="control-input" readonly
-                      value="https://casino-royale.com/ref/123456">
-                    <button id="copy-ref-link" class="action-btn">Копировать</button>
-                  </div>
-                </div>
-                <div class="referral-stats">
-                  <div class="stat-item">
-                    <div class="stat-value">0</div>
-                    <div class="stat-label">Активных рефералов</div>
-                  </div>
-                  <div class="stat-item">
-                    <div class="stat-value">0 ₽</div>
-                    <div class="stat-label">Заработано с рефералов</div>
-                  </div>
-                </div>
-                <a href="/referral/referral.html" class="action-btn secondary-btn details-btn">Подробнее о реферальной
-                  системе</a>
-              </div>
-            </div>
-            <!-- Специальные предложения -->
-            <!-- <div class="bonus-card special-bonus">
-              <div class="corner-decoration top-left"></div>
-              <div class="corner-decoration top-right"></div>
-              <div class="corner-decoration bottom-left"></div>
-              <div class="corner-decoration bottom-right"></div>
-              <div class="bonus-icon">⭐</div>
-              <div class="bonus-content">
-                <h2 class="bonus-title">Специальные предложения</h2>
-                <p class="bonus-description">Ограниченные по времени предложения и акции для всех игроков.</p>
-                <div class="special-offers">
-                  <div class="special-offer">
-                    <div class="offer-header">
-                      <h3 class="offer-title">Турнир "Апрельский джекпот"</h3>
-                      <div class="offer-duration">Осталось: 2 дня</div>
-                    </div>
-                    <p class="offer-description">Участвуйте в специальном турнире по Джекпоту и выиграйте главный приз в
-                      100,000 ₽.</p>
-                    <div class="offer-prize">Призовой фонд: 100,000 ₽</div>
-                    <a href="#" class="action-btn">Участвовать</a>
-                  </div>
-                  <div class="special-offer">
-                    <div class="offer-header">
-                      <h3 class="offer-title">Майский марафон</h3>
-                      <div class="offer-duration">Скоро</div>
-                    </div>
-                    <p class="offer-description">Каждый день в течение мая выполняйте задания и получайте особые
-                      награды.</p>
-                    <div class="offer-prize">Ежедневные призы + главный приз</div>
-                    <a href="#" class="action-btn btn-disabled">Недоступно</a>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-          </div>
+        <nav class="main-nav">
+          <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <ul class="nav-list">
+            <li><a href="./index.html" class="nav-link">Главная</a></li>
+            <li><a href="./jackpot.html" class="nav-link">Джекпот</a></li>
+            <li><a href="./x50.html" class="nav-link">X50</a></li>
+            <li><a href="./dice.html" class="nav-link">Dice</a></li>
+            <li><a href="./mines.html" class="nav-link">Мины</a></li>
+            <li><a href="./bonus.html" class="nav-link active">Бонусы</a></li>
+            <li><a href="./referral.html" class="nav-link">Рефералы</a></li>
+            <li><a href="./profile.html" class="nav-link">Профиль</a></li>
+          </ul>
+        </nav>
+        <div class="auth-container">
+          <button id="login-vk" class="auth-btn vk">Войти через VK</button>
+          <button id="login-tg" class="auth-btn tg">Войти через TG</button>
         </div>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-logo">
-              <span class="logo-text">Casino Royale</span>
-              <p class="copyright">© 2022-2025 Casino Royale</p>
+      </div>
+    </header>
+    <div class="scaler-wrapper">
+      <div class="page-wrapper">
+        <main class="main-content">
+          <div class="container game-container">
+            <div class="game-title-container">
+              <h1 class="game-title">Бонусы</h1>
+              <p class="game-description">Получайте дополнительные вознаграждения и увеличивайте свой баланс с нашими
+                бонусами и акциями.</p>
             </div>
-            <div class="footer-links">
-              <ul class="footer-nav">
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./support.html">Поддержка</a></li>
-                <li><a href="./terms.html">Условия использования</a></li>
-              </ul>
-            </div>
-            <div class="footer-social">
-              <a href="#" class="social-link vk">VK</a>
-              <a href="#" class="social-link tg">TG</a>
+            <div class="bonuses-container">
+              <!-- Ежедневный бонус -->
+              <div class="bonus-card daily-bonus">
+                <div class="corner-decoration top-left"></div>
+                <div class="corner-decoration top-right"></div>
+                <div class="corner-decoration bottom-left"></div>
+                <div class="corner-decoration bottom-right"></div>
+                <div class="bonus-icon">🎁</div>
+                <div class="bonus-content">
+                  <h2 class="bonus-title">Ежедневный бонус</h2>
+                  <p class="bonus-description">Получайте бонус каждый день. Размер бонуса зависит от вашего ранга.</p>
+                  <table class="bonus-table">
+                    <thead>
+                      <tr>
+                        <th>Ранг</th>
+                        <th>Сумма бонуса</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span class="rank-bronze">[BRONZE]</span></td>
+                        <td>до 250 ₽</td>
+                      </tr>
+                      <tr>
+                        <td><span class="rank-silver">[SILVER]</span></td>
+                        <td>до 500 ₽</td>
+                      </tr>
+                      <tr>
+                        <td><span class="rank-platinum">[PLATINUM]</span></td>
+                        <td>до 1000 ₽</td>
+                      </tr>
+                      <tr>
+                        <td><span class="rank-gold">[GOLD]</span></td>
+                        <td>до 1500 ₽</td>
+                      </tr>
+                      <tr>
+                        <td><span class="rank-sapphire">[SAPPHIRE]</span></td>
+                        <td>до 2500 ₽</td>
+                      </tr>
+                      <tr>
+                        <td><span class="rank-diamond">[DIAMOND]</span></td>
+                        <td>до 4000 ₽</td>
+                      </tr>
+                      <tr>
+                        <td><span class="rank-legend">[LEGEND]</span></td>
+                        <td>до 6000 ₽</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button id="claim-daily-bonus" class="action-btn">Получить бонус</button>
+                  <div id="bonus-cooldown" class="bonus-cooldown">Следующий бонус доступен через: <span>12:34:56</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Бонус за депозит -->
+              <div class="bonus-card deposit-bonus">
+                <div class="corner-decoration top-left"></div>
+                <div class="corner-decoration top-right"></div>
+                <div class="corner-decoration bottom-left"></div>
+                <div class="corner-decoration bottom-right"></div>
+                <div class="bonus-icon">💰</div>
+                <div class="bonus-content">
+                  <h2 class="bonus-title">Бонус за депозит</h2>
+                  <p class="bonus-description">Получайте дополнительные средства при каждом пополнении баланса. Процент
+                    бонуса зависит от вашего ранга.</p>
+                  <table class="bonus-table">
+                    <thead>
+                      <tr>
+                        <th>Ранг</th>
+                        <th>Бонус к депозиту</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span class="rank-bronze">[BRONZE]</span></td>
+                        <td>0.5%</td>
+                      </tr>
+                      <tr>
+                        <td><span class="rank-silver">[SILVER]</span></td>
+                        <td>0.75%</td>
+                      </tr>
+                      <tr>
+                        <td><span class="rank-platinum">[PLATINUM]</span></td>
+                        <td>1%</td>
+                      </tr>
+                      <tr>
+                        <td><span class="rank-gold">[GOLD]</span></td>
+                        <td>1.25%</td>
+                      </tr>
+                      <tr>
+                        <td><span class="rank-sapphire">[SAPPHIRE]</span></td>
+                        <td>1.5%</td>
+                      </tr>
+                      <tr>
+                        <td><span class="rank-diamond">[DIAMOND]</span></td>
+                        <td>2%</td>
+                      </tr>
+                      <tr>
+                        <td><span class="rank-legend">[LEGEND]</span></td>
+                        <td>2.5%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button id="deposit-btn" class="action-btn">Пополнить баланс</button>
+                </div>
+              </div>
+              <!-- Промокоды -->
+              <div class="bonus-card promo-bonus">
+                <div class="corner-decoration top-left"></div>
+                <div class="corner-decoration top-right"></div>
+                <div class="corner-decoration bottom-left"></div>
+                <div class="corner-decoration bottom-right"></div>
+                <div class="bonus-icon">🎫</div>
+                <div class="bonus-content">
+                  <h2 class="bonus-title">Промокоды</h2>
+                  <p class="bonus-description">Активируйте промокоды и получайте дополнительные бонусы. Следите за нашими
+                    социальными сетями, чтобы не пропустить новые промокоды.</p>
+                  <div class="promo-input-group">
+                    <input type="text" id="promo-code" class="control-input" placeholder="Введите промокод...">
+                    <button id="activate-promo" class="action-btn">Активировать</button>
+                  </div>
+                  <div class="active-promos">
+                    <h3>Активные промокоды</h3>
+                    <div class="promo-list">
+                      <div class="promo-item">
+                        <div class="promo-item-code">WELCOME2025</div>
+                        <div class="promo-item-reward">500 ₽ при первом депозите</div>
+                        <div class="promo-item-expiry">до 31.05.2025</div>
+                      </div>
+                      <div class="promo-item">
+                        <div class="promo-item-code">WEEKEND50</div>
+                        <div class="promo-item-reward">50% к депозиту в выходные</div>
+                        <div class="promo-item-expiry">до 30.06.2025</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Реферальный бонус -->
+              <div class="bonus-card referral-bonus">
+                <div class="corner-decoration top-left"></div>
+                <div class="corner-decoration top-right"></div>
+                <div class="corner-decoration bottom-left"></div>
+                <div class="corner-decoration bottom-right"></div>
+                <div class="bonus-icon">👥</div>
+                <div class="bonus-content">
+                  <h2 class="bonus-title">Реферальный бонус</h2>
+                  <p class="bonus-description">Приглашайте друзей и получайте 5% от всех их депозитов.</p>
+                  <div class="referral-link-container">
+                    <p>Ваша реферальная ссылка:</p>
+                    <div class="ref-link-box">
+                      <input type="text" id="ref-link" class="control-input" readonly
+                        value="https://casino-royale.com/ref/123456">
+                      <button id="copy-ref-link" class="action-btn">Копировать</button>
+                    </div>
+                  </div>
+                  <div class="referral-stats">
+                    <div class="stat-item">
+                      <div class="stat-value">0</div>
+                      <div class="stat-label">Активных рефералов</div>
+                    </div>
+                    <div class="stat-item">
+                      <div class="stat-value">0 ₽</div>
+                      <div class="stat-label">Заработано с рефералов</div>
+                    </div>
+                  </div>
+                  <a href="/referral/referral.html" class="action-btn secondary-btn details-btn">Подробнее о реферальной
+                    системе</a>
+                </div>
+              </div>
+              <!-- Специальные предложения -->
+              <!-- <div class="bonus-card special-bonus">
+                <div class="corner-decoration top-left"></div>
+                <div class="corner-decoration top-right"></div>
+                <div class="corner-decoration bottom-left"></div>
+                <div class="corner-decoration bottom-right"></div>
+                <div class="bonus-icon">⭐</div>
+                <div class="bonus-content">
+                  <h2 class="bonus-title">Специальные предложения</h2>
+                  <p class="bonus-description">Ограниченные по времени предложения и акции для всех игроков.</p>
+                  <div class="special-offers">
+                    <div class="special-offer">
+                      <div class="offer-header">
+                        <h3 class="offer-title">Турнир "Апрельский джекпот"</h3>
+                        <div class="offer-duration">Осталось: 2 дня</div>
+                      </div>
+                      <p class="offer-description">Участвуйте в специальном турнире по Джекпоту и выиграйте главный приз в
+                        100,000 ₽.</p>
+                      <div class="offer-prize">Призовой фонд: 100,000 ₽</div>
+                      <a href="#" class="action-btn">Участвовать</a>
+                    </div>
+                    <div class="special-offer">
+                      <div class="offer-header">
+                        <h3 class="offer-title">Майский марафон</h3>
+                        <div class="offer-duration">Скоро</div>
+                      </div>
+                      <p class="offer-description">Каждый день в течение мая выполняйте задания и получайте особые
+                        награды.</p>
+                      <div class="offer-prize">Ежедневные призы + главный приз</div>
+                      <a href="#" class="action-btn btn-disabled">Недоступно</a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
             </div>
           </div>
-        </div>
-      </footer>
+        </main>
+      </div>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-text">Casino Royale</span>
+            <p class="copyright">© 2022-2025 Casino Royale</p>
+          </div>
+          <div class="footer-links">
+            <ul class="footer-nav">
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./support.html">Поддержка</a></li>
+              <li><a href="./terms.html">Условия использования</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-link vk">VK</a>
+            <a href="#" class="social-link tg">TG</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Модальные окна -->
     <div class="modal" id="auth-modal">

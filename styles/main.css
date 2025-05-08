@@ -87,7 +87,7 @@ body {
 	background-size: cover;
 	width: 565px;
 	height: 770px;
-	left: -285px;
+	left: -385px;
 	top: 100px;
 	z-index: 0;
 	opacity: 0.5;
@@ -101,7 +101,7 @@ body {
 	width: 960px;
 	height: 655px;
 	right: -385px;
-	bottom: 0;
+	top: 440px;
 	z-index: 0;
 	opacity: 0.5;
 }

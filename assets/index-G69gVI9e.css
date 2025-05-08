@@ -42,20 +42,37 @@ body {
 	background-size: cover; */
 }
 
-html,
 body {
-	height: 100%;
-	margin: 0;
+	overflow-x: hidden;
+	font-family: sans-serif;
+}
+
+.footer {
+	background-color: #ddd;
+	text-align: center;
+	padding: 20px;
+	font-size: 14px;
+}
+
+.scaler-wrapper {
+	flex-grow: 1.5;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 30px 0;
+	overflow: hidden; /* Прибираємо вертикальний скрол при масштабуванні */
 }
 
 .page-wrapper {
 	min-height: 100%;
+	width: 1440px;
+	transform-origin: top center;
 	display: flex;
 	flex-direction: column;
 }
 
 main {
-	flex: 1; /* Займає весь вільний простір */
+	flex: 1;
 }
 
 footer {
@@ -694,7 +711,7 @@ button,
 	background-image: url('../images/coin.png');
 	background-repeat: no-repeat;
 	width: 200px;
-	left: 0;
+	left: -122px;
 	top: 20px;
 	height: 200px;
 	z-index: -1;
@@ -706,7 +723,7 @@ button,
 	background-image: url('../images/bag.png');
 	background-repeat: no-repeat;
 	width: 200px;
-	right: 0;
+	right: -122px;
 	top: 20px;
 	height: 200px;
 	z-index: -1;
@@ -1315,6 +1332,7 @@ button,
 	text-align: center;
 	cursor: pointer;
 	transition: transform 0.3s ease;
+	max-width: 85vw;
 }
 .promo-banner:hover {
 	transform: scale(1.03);
@@ -1536,7 +1554,7 @@ button,
 		display: block;
 	}
 
-	.auth-container{
+	.auth-container {
 		margin-left: 0;
 	}
 
@@ -1598,7 +1616,7 @@ button,
 	max-width: 38px;
 	max-height: 38px;
 }
-.user-details{
+.user-details {
 	font-size: 14px;
 }
 @media (max-width: 991px) {

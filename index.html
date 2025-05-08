@@ -63,202 +63,201 @@
 
     </nav>
     <div class="menu-overlay"></div>
-    <div class="page-wrapper">
-      <header class="header">
-        <div class="container header-container">
-          <div class="header__top">
-            <a href="./index.html" class="logo">
-              <span class="logo-text">Casino Royale</span>
-            </a>
-
-          </div>
-          <nav class="main-nav main-nav-desktop">
-            <button id="theme-toggle-desktop" class="theme-toggle-btn" title="Переключить тему">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-              </svg>
-            </button>
-            <ul class="nav-list">
-              <li><a href="./index.html" class="nav-link active">Главная</a></li>
-              <li><a href="./jackpot.html" class="nav-link">Джекпот</a></li>
-              <li><a href="./x50.html" class="nav-link">X50</a></li>
-              <li><a href="./dice.html" class="nav-link">Dice</a></li>
-              <li><a href="./mines.html" class="nav-link">Мины</a></li>
-              <li><a href="./bonus.html" class="nav-link">Бонусы</a></li>
-              <li><a href="./referral.html" class="nav-link">Рефералы</a></li>
-              <li><a href="./profile.html" class="nav-link">Профиль</a></li>
-            </ul>
-
-          </nav>
-          <div class="auth-container">
-            <button id="login-vk" class="auth-btn vk">Войти через VK</button>
-            <button id="login-tg" class="auth-btn tg">Войти через TG</button>
-          </div>
-
+    <header class="header">
+      <div class="container header-container">
+        <div class="header__top">
+          <a href="./index.html" class="logo">
+            <span class="logo-text">Casino Royale</span>
+          </a>
         </div>
-      </header>
-      <main class="main-content main-content-page main-content-wrapper">
-        <div class="container">
-          <!-- Промо-баннер -->
-          <div class="promo-banner" id="game-card" data-game="bonus">
-            <div class="corner-decoration top-left"></div>
-            <div class="corner-decoration top-right"></div>
-            <div class="corner-decoration bottom-left"></div>
-            <div class="corner-decoration bottom-right"></div>
-            <div class="promo-content">
-              <h2 class="promo-title">Приветственный бонус</h2>
-              <p class="promo-text">Получите 100% бонус на первый депозит до 5000 монет!</p>
-              <a href="./bonus.html" class="promo-btn glow">Получить бонус</a>
-            </div>
-          </div>
-
-          <div class="games-showcase">
-            <div class="game-card" data-game="jackpot">
-              <div class="corner-decoration top-left"></div>
-              <div class="corner-decoration top-right"></div>
-              <div class="corner-decoration bottom-left"></div>
-              <div class="corner-decoration bottom-right"></div>
-              <div class="game-image">
-                <img loading="lazy"
-                  src="data:image/svg+xml,%3csvg%20width='120'%20height='120'%20viewBox='0%200%20120%20120'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='60'%20cy='60'%20r='55'%20stroke='%23FF6B00'%20stroke-width='5'/%3e%3ccircle%20cx='60'%20cy='60'%20r='45'%20fill='%231a1a1a'%20stroke='%23FF6B00'%20stroke-width='2'/%3e%3cpath%20d='M40%2040H80V70C80%2075.5%2075.5%2080%2070%2080H50C44.5%2080%2040%2075.5%2040%2070V40Z'%20fill='%23FF6B00'/%3e%3crect%20x='45'%20y='30'%20width='30'%20height='10'%20rx='2'%20fill='%23FF6B00'/%3e%3ctext%20x='60'%20y='60'%20text-anchor='middle'%20font-size='16'%20font-weight='bold'%20fill='%231a1a1a'%3eJACK%3c/text%3e%3ctext%20x='60'%20y='75'%20text-anchor='middle'%20font-size='16'%20font-weight='bold'%20fill='%231a1a1a'%3ePOT%3c/text%3e%3c/svg%3e"
-                  alt="Джекпот" />
-              </div>
-              <h3 class="game-title">Джекпот</h3>
-              <p class="game-description">Испытай удачу в розыгрыше!</p>
-              <a href="./jackpot.html" class="play-btn">Играть</a>
-            </div>
-            <div class="game-card" data-game="x50">
-              <div class="corner-decoration top-left"></div>
-              <div class="corner-decoration top-right"></div>
-              <div class="corner-decoration bottom-left"></div>
-              <div class="corner-decoration bottom-right"></div>
-              <div class="game-image">
-                <img loading="lazy"
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNTUiIHN0cm9rZT0iI0ZGNkIwMCIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgPGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNDUiIGZpbGw9IiMxYTFhMWEiIHN0cm9rZT0iI0ZGNkIwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iMzAiIHk9IjYwIiBmaWxsPSIjRkY2QjAwIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+WDwvdGV4dD4KICA8dGV4dCB4PSI1NSIgeT0iNzUiIGZpbGw9IiNGRjZCMDAiIGZvbnQtc2l6ZT0iMzYiIGZvbnQtd2VpZ2h0PSJib2xkIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj41MDwvdGV4dD4KPC9zdmc+Cg=="
-                  alt="X50" />
-              </div>
-              <h3 class="game-title">X50</h3>
-              <p class="game-description">Умножь свою ставку в 50 раз!</p>
-              <a href="./x50.html" class="play-btn">Играть</a>
-            </div>
-            <div class="game-card" data-game="dice">
-              <div class="corner-decoration top-left"></div>
-              <div class="corner-decoration top-right"></div>
-              <div class="corner-decoration bottom-left"></div>
-              <div class="corner-decoration bottom-right"></div>
-              <div class="game-image">
-                <img loading="lazy"
-                  src="data:image/svg+xml,%3csvg%20width='120'%20height='120'%20viewBox='0%200%20120%20120'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='60'%20cy='60'%20r='55'%20stroke='%23FF6B00'%20stroke-width='5'/%3e%3ccircle%20cx='60'%20cy='60'%20r='45'%20fill='%231a1a1a'%20stroke='%23FF6B00'%20stroke-width='2'/%3e%3crect%20x='30'%20y='30'%20width='60'%20height='60'%20rx='10'%20fill='%23FF6B00'/%3e%3ccircle%20cx='45'%20cy='45'%20r='6'%20fill='%231a1a1a'/%3e%3ccircle%20cx='75'%20cy='45'%20r='6'%20fill='%231a1a1a'/%3e%3ccircle%20cx='45'%20cy='75'%20r='6'%20fill='%231a1a1a'/%3e%3ccircle%20cx='60'%20cy='60'%20r='6'%20fill='%231a1a1a'/%3e%3ccircle%20cx='75'%20cy='75'%20r='6'%20fill='%231a1a1a'/%3e%3c/svg%3e"
-                  alt="Dice" />
-              </div>
-              <h3 class="game-title">Dice</h3>
-              <p class="game-description">Делай ставки и угадывай числа!</p>
-              <a href="./dice.html" class="play-btn">Играть</a>
-            </div>
-            <div class="game-card" data-game="mines">
-              <div class="corner-decoration top-left"></div>
-              <div class="corner-decoration top-right"></div>
-              <div class="corner-decoration bottom-left"></div>
-              <div class="corner-decoration bottom-right"></div>
-              <div class="game-image">
-                <img loading="lazy"
-                  src="data:image/svg+xml,%3csvg%20width='120'%20height='120'%20viewBox='0%200%20120%20120'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='60'%20cy='60'%20r='55'%20stroke='%23FF6B00'%20stroke-width='5'/%3e%3ccircle%20cx='60'%20cy='60'%20r='45'%20fill='%231a1a1a'%20stroke='%23FF6B00'%20stroke-width='2'/%3e%3ccircle%20cx='60'%20cy='60'%20r='20'%20fill='%23FF6B00'/%3e%3cpath%20d='M60%2026L62.5%2043.5H80L65.75%2054.5L70%2070L60%2060L50%2070L54.25%2054.5L40%2043.5H57.5L60%2026Z'%20fill='%23FF6B00'/%3e%3cpath%20d='M60%2094L57.5%2076.5H40L54.25%2065.5L50%2050L60%2060L70%2050L65.75%2065.5L80%2076.5H62.5L60%2094Z'%20fill='%23FF6B00'/%3e%3cpath%20d='M26%2060L43.5%2057.5V40L54.5%2054.25L70%2050L60%2060L70%2070L54.5%2065.75L43.5%2080V62.5L26%2060Z'%20fill='%23FF6B00'/%3e%3cpath%20d='M94%2060L76.5%2062.5V80L65.5%2065.75L50%2070L60%2060L50%2050L65.5%2054.25L76.5%2040V57.5L94%2060Z'%20fill='%23FF6B00'/%3e%3c/svg%3e"
-                  alt="Мины" />
-              </div>
-              <h3 class="game-title">Мины</h3>
-              <p class="game-description">Выбирай клетки и избегай мин!</p>
-              <a href="./mines.html" class="play-btn">Играть</a>
-            </div>
-          </div>
-          <div class="features-section">
-            <div class="ranks-container">
-              <div class="corner-decoration top-left"></div>
-              <div class="corner-decoration top-right"></div>
-              <div class="corner-decoration bottom-left"></div>
-              <div class="corner-decoration bottom-right"></div>
-              <h2 class="section-title">Ранги</h2>
-              <ul class="ranks-list">
-                <li class="rank bronze">
-                  <span class="rank-name">[BRONZE]</span> - Сумма депозитов от 5000, 0.5% бонус к депозиту + рейкбек
-                  0.4%
-                </li>
-                <li class="rank silver">
-                  <span class="rank-name">[SILVER]</span> - Сумма депозитов от 10000, 0.75% бонус к депозиту + рейкбек
-                  0.5%
-                </li>
-                <li class="rank platinum">
-                  <span class="rank-name">[PLATINUM]</span> - Сумма депозитов от 20000, 1% бонус к депозиту + рейкбек
-                  0.6%
-                </li>
-                <li class="rank gold">
-                  <span class="rank-name">[GOLD]</span> - Сумма депозитов от 50000, 1.25% бонус к депозиту + рейкбек
-                  0.7%
-                </li>
-                <li class="rank sapphire">
-                  <span class="rank-name">[SAPPHIRE]</span> - Сумма депозитов от 100000, 1.5% бонус к депозиту + рейкбек
-                  0.8%
-                </li>
-                <li class="rank diamond">
-                  <span class="rank-name">[DIAMOND]</span> - Сумма депозитов от 250000, 2% бонус к депозиту + рейкбек 1%
-                </li>
-                <li class="rank legend">
-                  <span class="rank-name">[LEGEND]</span> - Сумма депозитов от 500000, 2.5% бонус к депозиту + рейкбек
-                  1.2%
-                </li>
-              </ul>
-              <p class="ranks-note">Чем больше сумма ваших депозитов, тем выше максимальная сумма возможного ежедневного
-                бонуса.</p>
-              <p class="ranks-note">Рейкбек не работает в режимах Slots и Спорт/КиберСпорт</p>
-            </div>
-            <div class="chat-container">
-              <div class="corner-decoration top-left"></div>
-              <div class="corner-decoration top-right"></div>
-              <div class="corner-decoration bottom-left"></div>
-              <div class="corner-decoration bottom-right"></div>
-              <h2 class="section-title">Чат</h2>
-              <div class="chat-messages" id="chat-messages">
-                <!-- Сообщения чата будут добавляться динамически -->
-              </div>
-              <div class="chat-input-container">
-                <input type="text" id="chat-input" placeholder="Введите сообщение..." />
-                <button id="chat-send-btn">Отправить</button>
-              </div>
-            </div>
-          </div>
-
+        <nav class="main-nav main-nav-desktop">
+          <button id="theme-toggle-desktop" class="theme-toggle-btn" title="Переключить тему">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <ul class="nav-list">
+            <li><a href="./index.html" class="nav-link active">Главная</a></li>
+            <li><a href="./jackpot.html" class="nav-link">Джекпот</a></li>
+            <li><a href="./x50.html" class="nav-link">X50</a></li>
+            <li><a href="./dice.html" class="nav-link">Dice</a></li>
+            <li><a href="./mines.html" class="nav-link">Мины</a></li>
+            <li><a href="./bonus.html" class="nav-link">Бонусы</a></li>
+            <li><a href="./referral.html" class="nav-link">Рефералы</a></li>
+            <li><a href="./profile.html" class="nav-link">Профиль</a></li>
+          </ul>
+        </nav>
+        <div class="auth-container">
+          <button id="login-vk" class="auth-btn vk">Войти через VK</button>
+          <button id="login-tg" class="auth-btn tg">Войти через TG</button>
         </div>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-logo">
-              <span class="logo-text">Casino Royale</span>
-              <p class="copyright">© 2022-2025 Casino Royale</p>
+      </div>
+    </header>
+    <div class="scaler-wrapper">
+      <div class="page-wrapper">
+        <main class="main-content main-content-page main-content-wrapper">
+          <div class="container">
+            <div class="promo-banner" id="game-card" data-game="bonus">
+              <div class="corner-decoration top-left"></div>
+              <div class="corner-decoration top-right"></div>
+              <div class="corner-decoration bottom-left"></div>
+              <div class="corner-decoration bottom-right"></div>
+              <div class="promo-content">
+                <h2 class="promo-title">Приветственный бонус</h2>
+                <p class="promo-text">Получите 100% бонус на первый депозит до 5000 монет!</p>
+                <a href="./bonus.html" class="promo-btn glow">Получить бонус</a>
+              </div>
             </div>
-            <div class="footer-links">
-              <ul class="footer-nav">
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./support.html">Поддержка</a></li>
-                <li><a href="./terms.html">Условия использования</a></li>
-              </ul>
+            <div class="games-showcase">
+              <div class="game-card" data-game="jackpot">
+                <div class="corner-decoration top-left"></div>
+                <div class="corner-decoration top-right"></div>
+                <div class="corner-decoration bottom-left"></div>
+                <div class="corner-decoration bottom-right"></div>
+                <div class="game-image">
+                  <img loading="lazy"
+                    src="data:image/svg+xml,%3csvg%20width='120'%20height='120'%20viewBox='0%200%20120%20120'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='60'%20cy='60'%20r='55'%20stroke='%23FF6B00'%20stroke-width='5'/%3e%3ccircle%20cx='60'%20cy='60'%20r='45'%20fill='%231a1a1a'%20stroke='%23FF6B00'%20stroke-width='2'/%3e%3cpath%20d='M40%2040H80V70C80%2075.5%2075.5%2080%2070%2080H50C44.5%2080%2040%2075.5%2040%2070V40Z'%20fill='%23FF6B00'/%3e%3crect%20x='45'%20y='30'%20width='30'%20height='10'%20rx='2'%20fill='%23FF6B00'/%3e%3ctext%20x='60'%20y='60'%20text-anchor='middle'%20font-size='16'%20font-weight='bold'%20fill='%231a1a1a'%3eJACK%3c/text%3e%3ctext%20x='60'%20y='75'%20text-anchor='middle'%20font-size='16'%20font-weight='bold'%20fill='%231a1a1a'%3ePOT%3c/text%3e%3c/svg%3e"
+                    alt="Джекпот" />
+                </div>
+                <h3 class="game-title">Джекпот</h3>
+                <p class="game-description">Испытай удачу в розыгрыше!</p>
+                <a href="./jackpot.html" class="play-btn">Играть</a>
+              </div>
+              <div class="game-card" data-game="x50">
+                <div class="corner-decoration top-left"></div>
+                <div class="corner-decoration top-right"></div>
+                <div class="corner-decoration bottom-left"></div>
+                <div class="corner-decoration bottom-right"></div>
+                <div class="game-image">
+                  <img loading="lazy"
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNTUiIHN0cm9rZT0iI0ZGNkIwMCIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgPGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNDUiIGZpbGw9IiMxYTFhMWEiIHN0cm9rZT0iI0ZGNkIwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iMzAiIHk9IjYwIiBmaWxsPSIjRkY2QjAwIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+WDwvdGV4dD4KICA8dGV4dCB4PSI1NSIgeT0iNzUiIGZpbGw9IiNGRjZCMDAiIGZvbnQtc2l6ZT0iMzYiIGZvbnQtd2VpZ2h0PSJib2xkIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj41MDwvdGV4dD4KPC9zdmc+Cg=="
+                    alt="X50" />
+                </div>
+                <h3 class="game-title">X50</h3>
+                <p class="game-description">Умножь свою ставку в 50 раз!</p>
+                <a href="./x50.html" class="play-btn">Играть</a>
+              </div>
+              <div class="game-card" data-game="dice">
+                <div class="corner-decoration top-left"></div>
+                <div class="corner-decoration top-right"></div>
+                <div class="corner-decoration bottom-left"></div>
+                <div class="corner-decoration bottom-right"></div>
+                <div class="game-image">
+                  <img loading="lazy"
+                    src="data:image/svg+xml,%3csvg%20width='120'%20height='120'%20viewBox='0%200%20120%20120'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='60'%20cy='60'%20r='55'%20stroke='%23FF6B00'%20stroke-width='5'/%3e%3ccircle%20cx='60'%20cy='60'%20r='45'%20fill='%231a1a1a'%20stroke='%23FF6B00'%20stroke-width='2'/%3e%3crect%20x='30'%20y='30'%20width='60'%20height='60'%20rx='10'%20fill='%23FF6B00'/%3e%3ccircle%20cx='45'%20cy='45'%20r='6'%20fill='%231a1a1a'/%3e%3ccircle%20cx='75'%20cy='45'%20r='6'%20fill='%231a1a1a'/%3e%3ccircle%20cx='45'%20cy='75'%20r='6'%20fill='%231a1a1a'/%3e%3ccircle%20cx='60'%20cy='60'%20r='6'%20fill='%231a1a1a'/%3e%3ccircle%20cx='75'%20cy='75'%20r='6'%20fill='%231a1a1a'/%3e%3c/svg%3e"
+                    alt="Dice" />
+                </div>
+                <h3 class="game-title">Dice</h3>
+                <p class="game-description">Делай ставки и угадывай числа!</p>
+                <a href="./dice.html" class="play-btn">Играть</a>
+              </div>
+              <div class="game-card" data-game="mines">
+                <div class="corner-decoration top-left"></div>
+                <div class="corner-decoration top-right"></div>
+                <div class="corner-decoration bottom-left"></div>
+                <div class="corner-decoration bottom-right"></div>
+                <div class="game-image">
+                  <img loading="lazy"
+                    src="data:image/svg+xml,%3csvg%20width='120'%20height='120'%20viewBox='0%200%20120%20120'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='60'%20cy='60'%20r='55'%20stroke='%23FF6B00'%20stroke-width='5'/%3e%3ccircle%20cx='60'%20cy='60'%20r='45'%20fill='%231a1a1a'%20stroke='%23FF6B00'%20stroke-width='2'/%3e%3ccircle%20cx='60'%20cy='60'%20r='20'%20fill='%23FF6B00'/%3e%3cpath%20d='M60%2026L62.5%2043.5H80L65.75%2054.5L70%2070L60%2060L50%2070L54.25%2054.5L40%2043.5H57.5L60%2026Z'%20fill='%23FF6B00'/%3e%3cpath%20d='M60%2094L57.5%2076.5H40L54.25%2065.5L50%2050L60%2060L70%2050L65.75%2065.5L80%2076.5H62.5L60%2094Z'%20fill='%23FF6B00'/%3e%3cpath%20d='M26%2060L43.5%2057.5V40L54.5%2054.25L70%2050L60%2060L70%2070L54.5%2065.75L43.5%2080V62.5L26%2060Z'%20fill='%23FF6B00'/%3e%3cpath%20d='M94%2060L76.5%2062.5V80L65.5%2065.75L50%2070L60%2060L50%2050L65.5%2054.25L76.5%2040V57.5L94%2060Z'%20fill='%23FF6B00'/%3e%3c/svg%3e"
+                    alt="Мины" />
+                </div>
+                <h3 class="game-title">Мины</h3>
+                <p class="game-description">Выбирай клетки и избегай мин!</p>
+                <a href="./mines.html" class="play-btn">Играть</a>
+              </div>
             </div>
-            <div class="footer-social">
-              <a href="#" class="social-link vk">VK</a>
-              <a href="#" class="social-link tg">TG</a>
+            <div class="features-section">
+              <div class="ranks-container">
+                <div class="corner-decoration top-left"></div>
+                <div class="corner-decoration top-right"></div>
+                <div class="corner-decoration bottom-left"></div>
+                <div class="corner-decoration bottom-right"></div>
+                <h2 class="section-title">Ранги</h2>
+                <ul class="ranks-list">
+                  <li class="rank bronze">
+                    <span class="rank-name">[BRONZE]</span> - Сумма депозитов от 5000, 0.5% бонус к депозиту + рейкбек
+                    0.4%
+                  </li>
+                  <li class="rank silver">
+                    <span class="rank-name">[SILVER]</span> - Сумма депозитов от 10000, 0.75% бонус к депозиту + рейкбек
+                    0.5%
+                  </li>
+                  <li class="rank platinum">
+                    <span class="rank-name">[PLATINUM]</span> - Сумма депозитов от 20000, 1% бонус к депозиту + рейкбек
+                    0.6%
+                  </li>
+                  <li class="rank gold">
+                    <span class="rank-name">[GOLD]</span> - Сумма депозитов от 50000, 1.25% бонус к депозиту + рейкбек
+                    0.7%
+                  </li>
+                  <li class="rank sapphire">
+                    <span class="rank-name">[SAPPHIRE]</span> - Сумма депозитов от 100000, 1.5% бонус к депозиту +
+                    рейкбек
+                    0.8%
+                  </li>
+                  <li class="rank diamond">
+                    <span class="rank-name">[DIAMOND]</span> - Сумма депозитов от 250000, 2% бонус к депозиту + рейкбек
+                    1%
+                  </li>
+                  <li class="rank legend">
+                    <span class="rank-name">[LEGEND]</span> - Сумма депозитов от 500000, 2.5% бонус к депозиту + рейкбек
+                    1.2%
+                  </li>
+                </ul>
+                <p class="ranks-note">Чем больше сумма ваших депозитов, тем выше максимальная сумма возможного
+                  ежедневного
+                  бонуса.</p>
+                <p class="ranks-note">Рейкбек не работает в режимах Slots и Спорт/КиберСпорт</p>
+              </div>
+              <div class="chat-container">
+                <div class="corner-decoration top-left"></div>
+                <div class="corner-decoration top-right"></div>
+                <div class="corner-decoration bottom-left"></div>
+                <div class="corner-decoration bottom-right"></div>
+                <h2 class="section-title">Чат</h2>
+                <div class="chat-messages" id="chat-messages">
+                  <!-- Сообщения чата будут добавляться динамически -->
+                </div>
+                <div class="chat-input-container">
+                  <input type="text" id="chat-input" placeholder="Введите сообщение..." />
+                  <button id="chat-send-btn">Отправить</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </main>
+      </div>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-text">Casino Royale</span>
+            <p class="copyright">© 2022-2025 Casino Royale</p>
+          </div>
+          <div class="footer-links">
+            <ul class="footer-nav">
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./support.html">Поддержка</a></li>
+              <li><a href="./terms.html">Условия использования</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-link vk">VK</a>
+            <a href="#" class="social-link tg">TG</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Модальные окна -->
     <div class="modal" id="auth-modal">
@@ -272,6 +271,11 @@
       </div>
     </div>
   </div>
+
+
+
+
+
   <script src="./assets/global-chat.js" defer></script>
   <script src="./assets/burger-menu.js" defer></script>
   <script src="./assets/range-inputs.js" defer></script>
