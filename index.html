@@ -272,8 +272,57 @@
     </div>
   </div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const pageWrapper = document.querySelector('.page-wrapper');
+    const scaleWrapper = document.querySelector('.scale-wrapper');
 
+    const observer = new MutationObserver(() => {
+      const style = getComputedStyle(pageWrapper);
+      if (style.transform.includes('matrix')) {
+        const matrixValues = style.transform.match(/matrix\(([^)]+)\)/);
+        if (matrixValues) {
+          const scaleX = parseFloat(matrixValues[1].split(',')[0]);
+          if (Math.abs(scaleX - 1.11716) < 0.001) {
+            scaleWrapper.style.padding = '200px';
+          } else {
+            scaleWrapper.style.padding = '';
+          }
+        }
+      }
+    });
 
+    observer.observe(pageWrapper, { attributes: true, attributeFilter: ['style'] });
+  });
+</script>
+
+<script>
+  function scaleSite() {
+      const baseWidth = 1690
+      const baseHeight = 900
+      const wrapper = document.querySelector('.page-wrapper')
+      const scalerWrapper = document.querySelector('.scaler-wrapper')
+
+      const winWidth = window.innerWidth
+
+      if (winWidth > 1380) {
+        const scale = winWidth / baseWidth
+        wrapper.style.transform = `scale(${scale})`
+        scalerWrapper.style.minHeight = `${baseHeight * scale}px`
+
+        // Пропорційний паддінг (наприклад, 5% від ширини)
+        const dynamicPadding = winWidth * 0.15
+        scalerWrapper.style.paddingBottom = `${dynamicPadding}px`
+      } else {
+        wrapper.style.transform = 'none'
+        scalerWrapper.style.minHeight = 'auto'
+        scalerWrapper.style.paddingBottom = ''
+      }
+    }
+
+    window.addEventListener('resize', scaleSite)
+    window.addEventListener('load', scaleSite)
+</script>
 
 
   <script src="./assets/global-chat.js" defer></script>
