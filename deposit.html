@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Пополнение баланса - Casino Royale</title>
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme') || 'dark'
+      document.documentElement.classList.add(theme === 'light' ? 'light-theme' : 'dark-theme')
+    })()
+  </script>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="stylesheet" href="./assets/index-G69gVI9e.css" />
+  <link rel="stylesheet" href="./styles/decorations.css" />
+  <link rel="stylesheet" href="./styles/burger-menu.css" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/theme-toggle.css" />
+</head>
+
+<body>
+  <div id="app">
+    <!-- Анимированные пузырьки на фоне -->
+    <div class="bubbles-container">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+
+    <div class="burger-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="main-nav main-nav-mobile">
+      <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+      <ul class="nav-list">
+        <li><a href="./index.html" class="nav-link">Главная</a></li>
+        <li><a href="./jackpot.html" class="nav-link">Джекпот</a></li>
+        <li><a href="./x50.html" class="nav-link">X50</a></li>
+        <li><a href="./dice.html" class="nav-link">Dice</a></li>
+        <li><a href="./mines.html" class="nav-link">Мины</a></li>
+        <li><a href="./bonus.html" class="nav-link">Бонусы</a></li>
+        <li><a href="./referral.html" class="nav-link">Рефералы</a></li>
+        <li><a href="./profile.html" class="nav-link">Профиль</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-overlay"></div>
+
+    <header class="header">
+      <div class="container header-container">
+        <div class="header__top">
+          <a href="./index.html" class="logo">
+            <span class="logo-text">Casino Royale</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button id="theme-toggle" class="theme-toggle-btn" title="Переключить тему">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <ul class="nav-list">
+            <li><a href="./index.html" class="nav-link">Главная</a></li>
+            <li><a href="./jackpot.html" class="nav-link">Джекпот</a></li>
+            <li><a href="./x50.html" class="nav-link">X50</a></li>
+            <li><a href="./dice.html" class="nav-link">Dice</a></li>
+            <li><a href="./mines.html" class="nav-link">Мины</a></li>
+            <li><a href="./bonus.html" class="nav-link">Бонусы</a></li>
+            <li><a href="./referral.html" class="nav-link">Рефералы</a></li>
+            <li><a href="./profile.html" class="nav-link">Профиль</a></li>
+          </ul>
+        </nav>
+        <div class="auth-container">
+          <button id="login-vk" class="auth-btn vk">Войти через VK</button>
+          <button id="login-tg" class="auth-btn tg">Войти через TG</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="scaler-wrapper">
+      <div class="page-wrapper">
+        <main class="main-content main-content-deposit">
+          <div class="container">
+            <h1 class="page-title page-title-deposit">Пополнение баланса</h1>
+            <p class="game-description game-description-deposit">Пополните свой игровой баланс удобным для вас способом</p>
+
+            <div class="deposit-container">
+              <div class="deposit-methods">
+                <h2 class="section-title">Выберите способ оплаты</h2>
+                <div class="payment-methods">
+                  <div class="payment-method active">
+                    <img src="./images/card.svg" alt="Банковская карта">
+                    <span>Карта</span>
+                  </div>
+                  <div class="payment-method">
+                    <img src="./images/qiwi.svg" alt="QIWI">
+                    <span>QIWI</span>
+                  </div>
+                  <div class="payment-method">
+                    <img src="./images/crypto.svg" alt="Криптовалюта">
+                    <span>Крипта</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="deposit-form">
+                <div class="amount-selector">
+                  <h3>Сумма пополнения</h3>
+                  <div class="amount-presets">
+                    <button class="amount-preset">100₴</button>
+                    <button class="amount-preset">500₴</button>
+                    <button class="amount-preset active">1000₴</button>
+                    <button class="amount-preset">2500₴</button>
+                    <button class="amount-preset">5000₴</button>
+                  </div>
+                  <div class="amount-custom">
+                    <input type="number" id="custom-amount" placeholder="Другая сумма" min="100" max="100000">
+                    <span class="currency">₴</span>
+                  </div>
+                </div>
+
+                <div class="bonus-info">
+                  <p>Бонус за пополнение: <span class="bonus-amount">+10%</span></p>
+                  <p>Вы получите: <span class="total-amount">1100₴</span></p>
+                </div>
+
+                <button class="deposit-btn">Пополнить баланс</button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-text">Casino Royale</span>
+            <p class="copyright">© 2022-2025 Casino Royale</p>
+          </div>
+          <div class="footer-links">
+            <ul class="footer-nav">
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./support.html">Поддержка</a></li>
+              <li><a href="./terms.html">Условия использования</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-link vk">VK</a>
+            <a href="#" class="social-link tg">TG</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div class="modal" id="auth-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Авторизация</h2>
+        <div class="auth-methods">
+          <button class="auth-method vk">Войти через VK</button>
+          <button class="auth-method tg">Войти через TG</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/burger-menu.js" defer></script>
+  <script src="./assets/theme-switcher.js" defer></script>
+  <script>
+    // Form validation
+    const depositForm = {
+      amount: 1000,
+      bonus: 0.1, // 10%
+      
+      validateAmount(value) {
+        return value >= 100 && value <= 100000;
+      },
+
+      updateTotal() {
+        const bonus = this.amount * this.bonus;
+        const total = this.amount + bonus;
+        document.querySelector('.bonus-amount').textContent = `+${this.bonus * 100}%`;
+        document.querySelector('.total-amount').textContent = `${total}₴`;
+      },
+
+      handlePresetClick(preset) {
+        const amount = parseInt(preset.textContent);
+        if (this.validateAmount(amount)) {
+          this.amount = amount;
+          this.updateTotal();
+          
+          // Update UI
+          document.querySelectorAll('.amount-preset').forEach(p => p.classList.remove('active'));
+          preset.classList.add('active');
+          document.getElementById('custom-amount').value = '';
+        }
+      },
+
+      handleCustomInput(input) {
+        const amount = parseInt(input.value);
+        if (this.validateAmount(amount)) {
+          this.amount = amount;
+          this.updateTotal();
+          
+          // Update UI
+          document.querySelectorAll('.amount-preset').forEach(p => p.classList.remove('active'));
+        }
+      }
+    };
+
+    // Event Listeners
+    document.querySelectorAll('.payment-method').forEach(method => {
+      method.addEventListener('click', () => {
+        document.querySelector('.payment-method.active').classList.remove('active');
+        method.classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('.amount-preset').forEach(preset => {
+      preset.addEventListener('click', () => depositForm.handlePresetClick(preset));
+    });
+
+    const customInput = document.getElementById('custom-amount');
+    customInput.addEventListener('input', () => depositForm.handleCustomInput(customInput));
+
+    // Initialize
+    depositForm.updateTotal();
+  </script>
+  <!-- Модальные окна -->
+  <div class="modal" id="auth-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Авторизация</h2>
+      <div class="auth-methods">
+        <button class="auth-method vk">Войти через VK</button>
+        <button class="auth-method tg">Войти через TG</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <script src="./assets/range-inputs.js" defer></script>
+  <script src="./assets/particles.js" defer></script>
+  
+  
+  <script src="./assets/faq-toggle.js" defer></script>
+  <script type="module" crossorigin src="./assets/index-ChTbzDwl.js"></script>
+  <script src="./assets/global-chat.js" defer></script>
+</body>
+
+</html>
