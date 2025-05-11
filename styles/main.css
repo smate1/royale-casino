@@ -1575,10 +1575,12 @@ button:hover::after,
 }
 
 @media (max-width: 768px) {
-	.deposit-btn{
+	.deposit-btn,
+	.withdraw-btn{
 		padding: 8px !important;
 	}
-	.main-content-deposit{
+	.main-content-deposit,
+	.main-content-withdraw{
 		padding-top: 0;
 	}
 	.promo-banner {
@@ -3301,7 +3303,8 @@ button:hover::after,
 		box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
 	}
 }
-.deposit-btn{
+.deposit-btn,
+.withdraw-btn{
 	text-decoration: none;
 	display: inline-block;
 	text-align: center;
@@ -3309,11 +3312,14 @@ button:hover::after,
 .action-btn{
 	font-size: 16px;
 }
-.page-title-deposit{
+.page-title-deposit,
+.page-title-withdraw{
 	display: block;
 }
 .page-title-deposit,
-.game-description-deposit{
+.game-description-deposit,
+.page-title-withdraw,
+.game-description-withdraw{
 	text-align: center;
 }
 /* Адаптивность для блока Live выигрышей на главной странице */
@@ -3478,5 +3484,120 @@ button:hover::after,
 @media (max-width: 480px) {
     .payment-methods {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Styles for withdraw page */
+.withdraw-container {
+    background-color: var(--color-dark);
+    border-radius: var(--radius);
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.withdraw-methods {
+    margin-bottom: 40px;
+}
+
+.withdraw-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.withdraw-details {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--color-dark-secondary);
+    border-radius: var(--radius);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--color-text);
+}
+
+#withdraw-address {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-dark);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius);
+    color: var(--color-text);
+    font-size: 16px;
+}
+
+#withdraw-address:focus {
+    border-color: var(--color-orange);
+    outline: none;
+}
+
+.commission-info {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-border);
+}
+
+.commission-info p {
+    margin: 8px 0;
+    color: var(--color-text-secondary);
+}
+
+.commission-info span {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.withdraw-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-orange);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.withdraw-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+}
+
+.withdraw-btn:disabled {
+    background-color: var(--color-border);
+    transform: none;
+    cursor: not-allowed;
+}
+
+.available-amount {
+    color: var(--color-orange);
+    font-weight: 600;
+}
+
+/* Responsive styles for withdraw page */
+@media (max-width: 768px) {
+    .withdraw-container {
+        padding: 20px;
+    }
+    
+    .withdraw-details {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .amount-presets {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .withdraw-btn {
+        padding: 12px;
     }
 }
