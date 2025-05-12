@@ -312,6 +312,7 @@ button:hover::after,
 		padding-bottom: 300px;
 	}
 }
+
 @media (min-width: 2250px) {
 	.main-content{
 		padding-bottom: 600px;
