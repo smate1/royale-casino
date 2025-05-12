@@ -307,6 +307,25 @@ button:hover::after,
 .main-content {
 	padding: 40px 0;
 }
+@media (min-width: 1850px) {
+	.main-content{
+		padding-bottom: 300px;
+	}
+}
+@media (min-width: 2250px) {
+	.main-content{
+		padding-bottom: 600px;
+	}
+}
+@media (min-width: 2850px) {
+	.main-content{
+		padding-bottom: 1200px;
+	}
+}
+
+
+
+
 
 /* Промо-баннер */
 .promo-banner {
@@ -1573,6 +1592,7 @@ button:hover::after,
 		align-items: center;
 	}
 }
+
 
 @media (max-width: 768px) {
 	.deposit-btn,
